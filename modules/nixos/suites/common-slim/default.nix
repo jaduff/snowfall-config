@@ -45,7 +45,7 @@ in {
 
       services = {
         openssh = enabled;
-        tailscale = enabled;
+        #tailscale = enabled;
       };
 
       security = {

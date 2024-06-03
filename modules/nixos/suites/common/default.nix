@@ -48,7 +48,7 @@ in {
       services = {
         printing = enabled;
         openssh = enabled;
-        tailscale = enabled;
+        #tailscale = enabled;
       };
 
       security = {
