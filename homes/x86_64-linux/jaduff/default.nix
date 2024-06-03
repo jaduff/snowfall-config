@@ -16,7 +16,7 @@ with lib.${namespace}; {
     };
 
     tools = {
-      git = enabled;
+     #git = enabled;
       direnv = enabled;
     };
   };
