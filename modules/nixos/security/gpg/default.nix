@@ -17,7 +17,6 @@ with lib.${namespace}; let
     enable-ssh-support
     default-cache-ttl 60
     max-cache-ttl 120
-    pinentry-program ${pkgs.pinentry-gnome}/bin/pinentry-gnome3
   '';
 
   guide = "${inputs.yubikey-guide}/README.md";
@@ -87,12 +86,10 @@ in {
       gnupg
       pinentry-curses
       pinentry-qt
-      pinentry-gnome
       paperkey
       guideDesktopItem
       reload-yubikey
     ];
-
     programs = {
       ssh.startAgent = false;
 
@@ -100,7 +97,7 @@ in {
         enable = true;
         enableSSHSupport = true;
         enableExtraSocket = true;
-        pinentryFlavor = "gnome3";
+        pinentryPackage = lib.mkForce pkgs.pinentry-curses;
       };
     };
 
