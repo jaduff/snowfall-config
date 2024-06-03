@@ -21,9 +21,10 @@ in {
   };
 
   config = mkIf cfg.enable {
-    environment.systemPackages = with pkgs; [git gh];
+    environment.systemPackages = with pkgs; [ git gh];
 
     plusultra.home.extraOptions = {
+      programs.gh.enable = true;
       programs.git = {
         enable = true;
         inherit (cfg) userName userEmail;

@@ -21,6 +21,7 @@ in {
   };
 
   config = mkIf cfg.enable {
+    programs.gh.enable = true;
     programs.git = {
       enable = true;
       inherit (cfg) userName userEmail;
