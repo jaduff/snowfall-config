@@ -23,10 +23,10 @@
 in {
   options.${namespace}.user = {
     enable = mkOpt types.bool true "Whether to configure the user account.";
-    name = mkOpt (types.nullOr types.str) (config.snowfallorg.user.name or "short") "The user account.";
+    name = mkOpt (types.nullOr types.str) (config.snowfallorg.user.name or "jaduff") "The user account.";
 
-    fullName = mkOpt types.str "Jake Hamilton" "The full name of the user.";
-    email = mkOpt types.str "jake.hamilton@hey.com" "The email of the user.";
+    fullName = mkOpt types.str "James Duff" "The full name of the user.";
+    email = mkOpt types.str "jaduff@protonmail.com" "The email of the user.";
 
     home = mkOpt (types.nullOr types.str) home-directory "The user's home directory.";
   };
