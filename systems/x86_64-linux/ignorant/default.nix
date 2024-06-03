@@ -17,6 +17,26 @@ with lib.${namespace}; {
   # condition when the system is coming up that causes this.
   # networking.dhcpcd.enable = false;
 
+nix.settings.trusted-substituters = ["https://ai.cachix.org"];
+nix.settings.trusted-public-keys = ["ai.cachix.org-1:N9dzRK+alWwoKXQlnn0H6aUx0lU/mspIoz8hMvGvbbc="];
+services.ntp.enable = true;
+
+
+  boot.initrd.systemd.enable = true;
+  boot.supportedFilesystems = [ "ntfs" ];
+  boot.plymouth.enable = true;
+  boot.plymouth.theme = "breeze";
+  environment.systemPackages = with pkgs; [
+    plymouth
+    breeze-plymouth
+    syncthingtray
+    intel-gpu-tools
+    dive
+    podman-tui
+    podman-compose
+    plusultra.kalidoface
+  ];
+virtualisation.libvirtd.enable = true;
   boot.binfmt.emulatedSystems = ["aarch64-linux"];
 
   # NOTE: This _may_ be required for openvpn to work. However, I have
@@ -33,11 +53,6 @@ with lib.${namespace}; {
     allowedTCPPorts = [28000];
   };
 
-  environment.systemPackages = with pkgs; [
-    chromium
-    plusultra.kalidoface
-    deluge
-  ];
 
   services.minecraft-server = {
     enable = false;
