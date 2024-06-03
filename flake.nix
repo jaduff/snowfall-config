@@ -3,13 +3,15 @@
 
   inputs = {
     # NixPkgs (nixos-23.11)
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-23.11";
+    #nixpkgs.url = "github:nixos/nixpkgs/nixos-23.11";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
 
     # NixPkgs Unstable (nixos-unstable)
     unstable.url = "github:nixos/nixpkgs/nixos-unstable";
 
     # Home Manager (release-22.05)
-    home-manager.url = "github:nix-community/home-manager/release-23.11";
+    #home-manager.url = "github:nix-community/home-manager/release-23.11";
+    home-manager.url = "github:nix-community/home-manager/master";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
 
     # macOS Support (master)

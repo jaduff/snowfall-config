@@ -52,7 +52,7 @@ in {
       };
 
       security = {
-        gpg = enabled;
+        #gpg = enabled;
         doas = enabled;
         keyring = enabled;
       };
