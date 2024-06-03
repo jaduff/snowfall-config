@@ -34,7 +34,7 @@ services.ntp.enable = true;
     dive
     podman-tui
     podman-compose
-    plusultra.kalidoface
+    #plusultra.kalidoface
   ];
 virtualisation.libvirtd.enable = true;
 #  boot.binfmt.emulatedSystems = ["aarch64-linux"];
@@ -44,26 +44,26 @@ virtualisation.libvirtd.enable = true;
 #  boot.kernelModules = ["tun"];
 
 
-  services.minecraft-server = {
-    enable = false;
-    eula = true;
-    declarative = true;
-    serverProperties = {
-      server-port = 43000;
-    };
-  };
+#  services.minecraft-server = {
+#    enable = false;
+#    eula = true;
+#    declarative = true;
+#    serverProperties = {
+#      server-port = 43000;
+#    };
+#  };
 
   plusultra = {
     apps = {
-      rpcs3 = enabled;
-      ubports-installer = enabled;
-      steamtinkerlaunch = enabled;
-      r2modman = enabled;
+      #rpcs3 = enabled;
+      #ubports-installer = enabled;
+      #steamtinkerlaunch = enabled;
+      #r2modman = enabled;
     };
 
 
     archetypes = {
-      gaming = enabled;
+      #gaming = enabled;
       workstation = enabled;
     };
 
