@@ -144,48 +144,6 @@
     };
 
     # Hosted Sites
-    lasersandfeelings = {
-      url = "github:jakehamilton/lasersandfeelings";
-      inputs.nixpkgs.follows = "nixpkgs";
-      inputs.unstable.follows = "unstable";
-    };
-    pungeonquest = {
-      url = "github:jakehamilton/pungeonquest";
-      inputs.nixpkgs.follows = "nixpkgs";
-      inputs.unstable.follows = "unstable";
-    };
-    scrumfish = {
-      url = "github:jakehamilton/scrumfi.sh";
-      inputs.nixpkgs.follows = "nixpkgs";
-      inputs.unstable.follows = "unstable";
-    };
-    retrospectacle = {
-      url = "github:jakehamilton/retrospectacle.app";
-      inputs.nixpkgs.follows = "nixpkgs";
-      inputs.unstable.follows = "unstable";
-    };
-    jakehamilton-website = {
-      url = "github:jakehamilton/jakehamilton.dev";
-      inputs.nixpkgs.follows = "nixpkgs";
-      inputs.unstable.follows = "unstable";
-    };
-    noop-ai-website = {
-      url = "github:noopai/noop.ai";
-      inputs.nixpkgs.follows = "nixpkgs";
-      inputs.unstable.follows = "unstable";
-    };
-    sokoban-app-website = {
-      url = "https://github.com/jakehamilton/sokoban.app/releases/download/v1/sokoban.app.tar.gz";
-      flake = false;
-    };
-    snowfall-docs = {
-      url = "github:snowfallorg/docs";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-    nixpkgs-news = {
-      url = "github:jakehamilton/nixpkgs.news";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
   };
 
   outputs = inputs: let
@@ -213,7 +171,6 @@
 
       overlays = with inputs; [
         avalanche.overlays.default
-        aux-website.overlays.default
         neovim.overlays.default
         tmux.overlay
         flake.overlays.default
@@ -222,9 +179,6 @@
         cowsay.overlays.default
         icehouse.overlays.default
         rf.overlays.default
-        attic.overlays.default
-        snowfall-docs.overlays.default
-        nixpkgs-news.overlays.default
       ];
 
       systems.modules.nixos = with inputs; [
