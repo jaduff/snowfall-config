@@ -16,6 +16,6 @@ in {
 
   config =
     mkIf cfg.enable {plusultra = {apps = {
-      office-printers = enabled;
+      work-printers = enabled;
     };};};
 }
