@@ -28,6 +28,7 @@ in {
         vlc = enabled;
         yt-music = enabled;
         gparted = enabled;
+        telegram-desktop = enabled;
       };
     };
   };
