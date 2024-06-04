@@ -29,6 +29,7 @@ in {
         yt-music = enabled;
         gparted = enabled;
         telegram-desktop = enabled;
+        nextcloud-client = enabled;
       };
     };
   };
