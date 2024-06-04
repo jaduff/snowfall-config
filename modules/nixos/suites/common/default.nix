@@ -23,7 +23,7 @@ in {
       nix = enabled;
 
       # TODO: Enable this once Attic is configured again.
-      # cache.public = enabled;
+       cache.public = enabled;
 
       cli-apps = {
         flake = enabled;
