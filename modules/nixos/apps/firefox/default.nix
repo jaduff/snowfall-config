@@ -12,13 +12,30 @@ with lib.${namespace}; let
   defaultSettings = {
     "browser.aboutwelcome.enabled" = false;
     "browser.meta_refresh_when_inactive.disabled" = true;
-    "browser.startup.homepage" = "https://hamho.me";
+    "browser.startup.homepage" = "https://kagi.com";
     "browser.bookmarks.showMobileBookmarks" = true;
     "browser.urlbar.suggest.quicksuggest.sponsored" = false;
     "browser.newtabpage.activity-stream.showSponsoredTopSites" = false;
     "browser.aboutConfig.showWarning" = false;
     "browser.ssb.enabled" = true;
   };
+  ExtensionSettings = {
+          "*".installation_mode = "blocked"; # blocks all addons except the ones specified below
+          # uBlock Origin:
+          "uBlock0@raymondhill.net" = {
+            install_url = "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi";
+            installation_mode = "force_installed";
+          };
+          # Privacy Badger:
+          "jid1-MnnxcxisBPnSXQ@jetpack" = {
+            install_url = "https://addons.mozilla.org/firefox/downloads/latest/privacy-badger17/latest.xpi";
+            installation_mode = "force_installed";
+          };
+          # 1Password:
+          "{d634138d-c276-4fc8-924b-40a0ea21d284}" = {
+            install_url = "https://addons.mozilla.org/firefox/downloads/latest/1password-x-password-manager/latest.xpi";
+            installation_mode = "force_installed";
+          };
 in {
   options.${namespace}.apps.firefox = with types; {
     enable = mkBoolOpt false "Whether or not to enable Firefox.";
@@ -59,11 +76,6 @@ in {
               pkgs.gnomeExtensions.gsconnect;
           };
 
-          profiles.${config.${namespace}.user.name} = {
-            inherit (cfg) extraConfig userChrome settings;
-            id = 0;
-            name = config.${namespace}.user.name;
-          };
         };
       };
     };
