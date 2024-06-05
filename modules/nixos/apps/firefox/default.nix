@@ -19,23 +19,6 @@ with lib.${namespace}; let
     "browser.aboutConfig.showWarning" = false;
     "browser.ssb.enabled" = true;
   };
-  ExtensionSettings = {
-          "*".installation_mode = "blocked"; # blocks all addons except the ones specified below
-          # uBlock Origin:
-          "uBlock0@raymondhill.net" = {
-            install_url = "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi";
-            installation_mode = "force_installed";
-          };
-          # Privacy Badger:
-          "jid1-MnnxcxisBPnSXQ@jetpack" = {
-            install_url = "https://addons.mozilla.org/firefox/downloads/latest/privacy-badger17/latest.xpi";
-            installation_mode = "force_installed";
-          };
-          # 1Password:
-          "{d634138d-c276-4fc8-924b-40a0ea21d284}" = {
-            install_url = "https://addons.mozilla.org/firefox/downloads/latest/1password-x-password-manager/latest.xpi";
-            installation_mode = "force_installed";
-          };
 in {
   options.${namespace}.apps.firefox = with types; {
     enable = mkBoolOpt false "Whether or not to enable Firefox.";
@@ -75,6 +58,55 @@ in {
               config.${namespace}.desktop.gnome.enable
               pkgs.gnomeExtensions.gsconnect;
           };
+          policies = {
+        DisableTelemetry = true;
+        DisableFirefoxStudies = true;
+        EnableTrackingProtection = {
+          Value= true;
+          Locked = true;
+          Cryptomining = true;
+          Fingerprinting = true;
+        };
+        DisablePocket = true;
+        DisableFirefoxAccounts = true;
+        DisableAccounts = true;
+        DisableFirefoxScreenshots = true;
+        OverrideFirstRunPage = "";
+        OverridePostUpdatePage = "";
+        DontCheckDefaultBrowser = true;
+        DisplayBookmarksToolbar = "never"; # alternatives: "always" or "newtab"
+        DisplayMenuBar = "default-off"; # alternatives: "always", "never" or "default-on"
+        SearchBar = "unified"; # alternative: "separate"
+
+        /* ---- EXTENSIONS ---- */
+        # Check about:support for extension/add-on ID strings.
+        # Valid strings for installation_mode are "allowed", "blocked",
+        # "force_installed" and "normal_installed".
+        ExtensionSettings = {
+          "*".installation_mode = "blocked"; # blocks all addons except the ones specified below
+          # Privacy Badger:
+          "jid1-MnnxcxisBPnSXQ@jetpack" = {
+            install_url = "https://addons.mozilla.org/firefox/downloads/latest/privacy-badger17/latest.xpi";
+            installation_mode = "force_installed";
+          };
+          # lastpass
+          "support@lastpass.com" = {
+            install_url = "https://addons.mozilla.org/firefox/downloads/file/4246455/lastpass_password_manager-4.127.0.1.xpi";
+            installation_mode = "force_installed";
+          };
+          # Kagi
+          "search@kagi.com" = {
+            install_url = "https://addons.mozilla.org/firefox/downloads/file/4173642/kagi_search_for_firefox-0.3.8.xpi";
+            installation_mode = "force_installed";
+          };
+          # Kagi
+          "enhancerforyoutube@maximerf.addons.mozilla.org" = {
+            install_url = "https://addons.mozilla.org/firefox/downloads/file/4269135/enhancer_for_youtube-2.0.124.2.xpi";
+            installation_mode = "force_installed";
+          };
+        };
+  
+      };
 
         };
       };
