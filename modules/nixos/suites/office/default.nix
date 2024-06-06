@@ -21,6 +21,5 @@ in {
       kcalc = enabled;
       protonvpn-gui = enabled;
       remmina = enabled;
-      borgbackup = enabled;
     };};};
 }
