@@ -8,9 +8,9 @@
 }:
 with lib;
 with lib.${namespace}; let
-  cfg = config.${namespace}.apps.btop;
+  cfg = config.${namespace}.tools.btop;
 in {
-  options.${namespace}.apps.btop = with types; {
+  options.${namespace}.tools.btop = with types; {
     enable = mkBoolOpt false "Whether or not to enable btop.";
   };
 
