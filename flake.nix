@@ -15,7 +15,8 @@
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
 
     lix = {
-      url = "git+https://git.lix.systems/lix-project/lix?ref=refs/tags/2.90-beta.1";
+      #url = "git+https://git.lix.systems/lix-project/lix?ref=refs/tags/2.90-beta.1";
+      url = "git+https://git.lix.systems/lix-project/lix";
       flake = false;
     };
     lix-module = {
@@ -206,6 +207,9 @@
 
       systems.hosts.jasper.modules = with inputs; [
         nixos-hardware.nixosModules.framework-11th-gen-intel
+      ];
+      systems.hosts.carnifex.modules = with inputs; [
+        lix-module.nixosModules.default
       ];
 
       deploy = lib.mkDeploy {inherit (inputs) self;};
