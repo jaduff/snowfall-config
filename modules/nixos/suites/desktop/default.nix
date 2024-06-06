@@ -30,6 +30,7 @@ in {
         gparted = enabled;
         telegram-desktop = enabled;
         nextcloud-client = enabled;
+        kdeconnect = enabled;
       };
     };
   };

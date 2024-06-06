@@ -15,7 +15,8 @@ in {
   };
 
   config = mkIf cfg.enable {
-    i18n.defaultLocale = "en_US.UTF-8";
+    #i18n.defaultLocale = "en_US.UTF-8";
+    i18n.defaultLocale = "en_AU.UTF-8";
 
     console = {keyMap = mkForce "us";};
   };
