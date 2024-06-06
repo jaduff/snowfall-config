@@ -192,6 +192,7 @@
         cowsay.overlays.default
         icehouse.overlays.default
         rf.overlays.default
+        lix-module.overlays.default
       ];
 
       systems.modules.nixos = with inputs; [
@@ -199,7 +200,6 @@
         home-manager.nixosModules.home-manager
         nix-ld.nixosModules.nix-ld
         vault-service.nixosModules.nixos-vault-service
-        lix-module.nixosModules.default
         # TODO: Replace plusultra.services.attic now that vault-agent
         # exists and can force override environment files.
         # attic.nixosModules.atticd
@@ -207,9 +207,6 @@
 
       systems.hosts.jasper.modules = with inputs; [
         nixos-hardware.nixosModules.framework-11th-gen-intel
-      ];
-      systems.hosts.carnifex.modules = with inputs; [
-        lix-module.nixosModules.default
       ];
 
       deploy = lib.mkDeploy {inherit (inputs) self;};
