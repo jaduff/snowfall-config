@@ -18,5 +18,9 @@ in {
     mkIf cfg.enable {plusultra = {apps = {
       libreoffice-qt-fresh = enabled;
       masterpdfeditor = enabled;
+      kcalc = enabled;
+      protonvpn-gui = enabled;
+      remmina = enabled;
+      borgbackup = enabled;
     };};};
 }
