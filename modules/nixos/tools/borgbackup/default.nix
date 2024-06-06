@@ -8,9 +8,9 @@
 }:
 with lib;
 with lib.${namespace}; let
-  cfg = config.${namespace}.apps.borgbackup;
+  cfg = config.${namespace}.tools.borgbackup;
 in {
-  options.${namespace}.apps.borgbackup = with types; {
+  options.${namespace}.tools.borgbackup = with types; {
     enable = mkBoolOpt false "Whether or not to enable borgbackup.";
   };
 

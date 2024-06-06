@@ -37,8 +37,8 @@ in {
         comma = enabled;
         nix-ld = enabled;
         bottom = enabled;
-        btop = true;
-        borgbackup = true;
+        btop = enabled;
+        borgbackup = enabled;
       };
 
       hardware = {
