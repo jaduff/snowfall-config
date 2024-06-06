@@ -15,5 +15,8 @@ in {
   };
 
   config =
-    mkIf cfg.enable {plusultra = {apps = {libreoffice-qt-fresh = enabled;};};};
+    mkIf cfg.enable {plusultra = {apps = {
+      libreoffice-qt-fresh = enabled;
+      masterpdfeditor = enabled;
+    };};};
 }
