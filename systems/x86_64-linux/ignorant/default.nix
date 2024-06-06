@@ -64,7 +64,7 @@ virtualisation.libvirtd.enable = true;
 
 
     archetypes = {
-      #gaming = enabled;
+      gaming = enabled;
       workstation = enabled;
     };
 
