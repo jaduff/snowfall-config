@@ -83,6 +83,10 @@
       unstable.follows = "unstable";
     };
 
+    #WSL
+    nixos-wsl.url = "github:nix-community/nixos-wsl";
+
+
     # Binary Cache
     attic = {
       url = "github:zhaofengli/attic";
@@ -207,6 +211,9 @@
 
       systems.hosts.jasper.modules = with inputs; [
         nixos-hardware.nixosModules.framework-11th-gen-intel
+      ];
+      systems.hosts.wsl.modules = with inputs; [
+        nixos-wsl.nixosModules.wsl
       ];
 
       deploy = lib.mkDeploy {inherit (inputs) self;};
