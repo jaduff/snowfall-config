@@ -8,7 +8,6 @@
 }:
 with lib;
 with lib.${namespace}; {
-  imports = [];
 
   # Resolve an issue with Bismuth's wired connections failing sometimes due to weird
   # DHCP issues. I'm not quite sure why this is the case, but I have found that the
@@ -17,6 +16,7 @@ with lib.${namespace}; {
   # condition when the system is coming up that causes this.
   # networking.dhcpcd.enable = false;
 
+#nixpkgs.overlays = lib.mkForce [];
 services.ntp.enable = true;
   wsl.enable = true;
   wsl.defaultUser = "nixos";
@@ -38,7 +38,6 @@ home-manager.backupFileExtension = "backup";
 
     };
 
-  };
 
   # WiFi is typically unused on the desktop. Enable this service
   # if it's no longer only using a wired connection.

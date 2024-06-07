@@ -86,7 +86,6 @@
     #WSL
     nixos-wsl.url = "github:nix-community/nixos-wsl";
 
-
     # Binary Cache
     attic = {
       url = "github:zhaofengli/attic";
