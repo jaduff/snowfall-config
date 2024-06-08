@@ -55,6 +55,9 @@ virtualisation.libvirtd.enable = true;
 #  };
 
   plusultra = {
+    services = {
+      local-ai = enabled;
+    };
     apps = {
       #rpcs3 = enabled;
       #ubports-installer = enabled;
