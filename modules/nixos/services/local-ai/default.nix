@@ -53,7 +53,7 @@ in {
 
     host = mkOpt types.str "" "The host to bind to.";
 
-    port = mkOpt types.port 8080 "The port to bind to.";
+    port = mkOpt types.port 11434 "The port to bind to.";
 
     cors = {
       enable = mkOpt types.bool false "Allow cross origin requests.";
