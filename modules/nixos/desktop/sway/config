@@ -224,7 +224,7 @@ bindsym $mod+r mode "resize"
 ######################
 
 input type:keyboard {
-	xkb_options caps:swapescape
+	#xkb_options caps:swapescape
 }
 
 input type:touchpad {

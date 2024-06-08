@@ -136,7 +136,7 @@ in {
                   follow_mouse = 2;
                   mouse_refocus = false;
 
-                  kb_options = "caps:escape";
+                  #kb_options = "caps:escape";
 
                   touchpad = {
                     natural_scroll = true;
