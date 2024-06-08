@@ -32,6 +32,10 @@ in {
         nextcloud-client = enabled;
         kdeconnect = enabled;
       };
+
+      tools = {
+        noto-fonts-emoji-blob-bin = enabled;
+      };
     };
   };
 }
