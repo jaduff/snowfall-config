@@ -61,6 +61,10 @@ virtualisation.libvirtd.enable = true;
       #r2modman = enabled;
     };
 
+    services = {
+      work-printers = enabled;
+    };
+
 
     archetypes = {
       #gaming = enabled;
