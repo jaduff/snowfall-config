@@ -2,9 +2,9 @@
 set -g escape-time 0
 
 # Change the prefix from C-b to C-s to make it easier to type.
-set -g prefix C-s
-unbind C-b
-bind C-s send-prefix
+#set -g prefix C-s
+#unbind C-b
+#bind C-s send-prefix
 
 # Start window numbers at 1 rather than 0.
 set -g base-index 1
