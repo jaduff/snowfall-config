@@ -70,6 +70,12 @@ virtualisation.libvirtd.enable = true;
       #gaming = enabled;
       workstation = enabled;
     };
+    system = {
+      fonts = enabled;
+      locale = enabled;
+      time = enabled;
+      xkb = enabled;
+    };
 
     desktop.gnome = {
       wallpaper = {
