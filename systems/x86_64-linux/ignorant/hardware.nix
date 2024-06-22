@@ -50,7 +50,7 @@ in {
  # Enable OpenGL
   hardware.opengl = {
     enable = true;
-    driSupport = true;
+    #driSupport = true;
     driSupport32Bit = true;
   };
   hardware.bluetooth.enable = true;
