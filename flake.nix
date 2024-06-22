@@ -117,10 +117,6 @@
       url = "github:NurMarvin/discord-tweaks";
       flake = false;
     };
-    discord-nord-theme = {
-      url = "github:DapperCore/NordCord";
-      flake = false;
-    };
 
     # Cows!
     cowsay = {
