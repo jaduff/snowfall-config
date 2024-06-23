@@ -15,7 +15,6 @@ with lib.${namespace}; let
     lutris = enabled;
     winetricks = enabled;
     protontricks = enabled;
-    doukutsu-rs = enabled;
     bottles = enabled;
   };
   cli-apps = {

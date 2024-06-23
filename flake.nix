@@ -25,10 +25,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    # macOS Support (master)
-    darwin.url = "github:lnl7/nix-darwin";
-    darwin.inputs.nixpkgs.follows = "nixpkgs";
-
     # Hardware Configuration
     nixos-hardware.url = "github:nixos/nixos-hardware";
 
@@ -46,8 +42,6 @@
     # avalanche.url = "path:/home/short/work/@snowfallorg/avalanche";
     avalanche.inputs.nixpkgs.follows = "unstable";
 
-    aux-website.url = "github:auxolotl/website";
-    aux-website.inputs.nixpkgs.follows = "nixpkgs";
 
     # Snowfall Flake
     flake.url = "github:snowfallorg/flake?ref=v1.4.1";
@@ -73,7 +67,7 @@
     nix-ld.inputs.nixpkgs.follows = "unstable";
 
     # Neovim
-    neovim.url = "github:jakehamilton/neovim";
+    neovim.url = "github:jaduff/neovim";
     neovim.inputs.nixpkgs.follows = "unstable";
 
     # Tmux
@@ -108,24 +102,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    # Discord Replugged
-    replugged.url = "github:LunNova/replugged-nix-flake";
-    replugged.inputs.nixpkgs.follows = "unstable";
-
-    # Discord Replugged plugins / themes
-    discord-tweaks = {
-      url = "github:NurMarvin/discord-tweaks";
-      flake = false;
-    };
-
-    # Cows!
-    cowsay = {
-      url = "github:snowfallorg/cowsay?ref=v1.3.0";
-      # TODO: Cowsay currently requires a newer version of ttyd that works
-      # around an issue with whitespace coloring. Until that is fixed,
-      # we won't be able to specify a unique nixpkgs value safely.
-      # inputs.nixpkgs.follows = "nixpkgs";
-    };
 
     # Backup management
     icehouse = {
@@ -188,7 +164,6 @@
         flake.overlays.default
         thaw.overlays.default
         drift.overlays.default
-        cowsay.overlays.default
         icehouse.overlays.default
         rf.overlays.default
         lix-module.overlays.default

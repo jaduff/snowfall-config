@@ -16,7 +16,6 @@ in {
 
   config = mkIf cfg.enable {
     environment.systemPackages = [
-      pkgs.plusultra.list-iommu
     ];
 
     plusultra = {
@@ -28,6 +27,7 @@ in {
       cli-apps = {
         flake = enabled;
         thaw = enabled;
+        vim = enabled;
       };
 
       tools = {

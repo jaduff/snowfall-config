@@ -17,10 +17,6 @@ in {
   config = mkIf cfg.enable {
     plusultra = {
       apps = {
-        discord = {
-          enable = true;
-          chromium = enabled;
-        };
         element = enabled;
       };
     };

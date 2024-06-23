@@ -15,10 +15,11 @@ with lib.${namespace}; let
   };
   cli-apps = {
     tmux = enabled;
-    neovim = enabled;
+    #neovim = enabled;
     yubikey = enabled;
     prisma = enabled;
     mods = enabled;
+    vim = enabled;
   };
 in {
   options.${namespace}.suites.development = with types; {
@@ -41,13 +42,12 @@ in {
 
       tools = {
         # attic = enabled;
-        at = enabled;
+        #at = enabled;
         direnv = enabled;
         go = enabled;
         http = enabled;
         k8s = enabled;
         node = enabled;
-        titan = enabled;
         qmk = enabled;
       };
 

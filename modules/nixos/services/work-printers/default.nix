@@ -15,7 +15,7 @@ in {
   };
 
   config = mkIf cfg.enable {
-    environment.systemPackages = with pkgs; [gutenprint fflinuxprint fxlinuxprint cups-kyodialog ];
-    services.printing.drivers = with pkgs; [ foomatic-db-ppds-withNonfreeDb fflinuxprint gutenprint hplip cups-pdf-to-pdf gutenprint fflinuxprint fxlinuxprint cups-kyodialog ];
+    environment.systemPackages = with pkgs; [gutenprint fflinuxprint fxlinuxprint cups-kyodialog gutenprintBin hplip];
+    services.printing.drivers = with pkgs; [ foomatic-db-ppds-withNonfreeDb fflinuxprint gutenprint hplip cups-pdf-to-pdf gutenprint fflinuxprint fxlinuxprint cups-kyodialog gutenprintBin];
   };
 }
