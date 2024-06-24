@@ -64,6 +64,7 @@ virtualisation.libvirtd.enable = true;
     services = {
       work-printers = enabled;
       samba = enabled;
+      syncthing = enabled;
     };
 
 
