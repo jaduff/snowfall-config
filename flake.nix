@@ -3,18 +3,27 @@
 
   inputs = {
     # NixPkgs (nixos-23.11)
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-23.11";
+    #nixpkgs.url = "github:nixos/nixpkgs/nixos-23.11";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
 
     # NixPkgs Unstable (nixos-unstable)
     unstable.url = "github:nixos/nixpkgs/nixos-unstable";
 
     # Home Manager (release-22.05)
-    home-manager.url = "github:nix-community/home-manager/release-23.11";
+    #home-manager.url = "github:nix-community/home-manager/release-23.11";
+    home-manager.url = "github:nix-community/home-manager/master";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
 
-    # macOS Support (master)
-    darwin.url = "github:lnl7/nix-darwin";
-    darwin.inputs.nixpkgs.follows = "nixpkgs";
+    lix = {
+      #url = "git+https://git.lix.systems/lix-project/lix?ref=refs/tags/2.90-beta.1";
+      url = "git+https://git.lix.systems/lix-project/lix";
+      flake = false;
+    };
+    lix-module = {
+      url = "git+https://git.lix.systems/lix-project/nixos-module";
+      inputs.lix.follows = "lix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
 
     # Hardware Configuration
     nixos-hardware.url = "github:nixos/nixos-hardware";
@@ -24,8 +33,8 @@
     nixos-generators.inputs.nixpkgs.follows = "nixpkgs";
 
     # Snowfall Lib
-    # snowfall-lib.url = "github:snowfallorg/lib?ref=v3.0.0";
-    snowfall-lib.url = "path:/home/short/work/@snowfallorg/lib";
+    snowfall-lib.url = "github:snowfallorg/lib?ref=v3.0.0";
+    #snowfall-lib.url = "path:/home/short/work/@snowfallorg/lib";
     snowfall-lib.inputs.nixpkgs.follows = "nixpkgs";
 
     # Avalanche
@@ -33,8 +42,6 @@
     # avalanche.url = "path:/home/short/work/@snowfallorg/avalanche";
     avalanche.inputs.nixpkgs.follows = "unstable";
 
-    aux-website.url = "github:auxolotl/website";
-    aux-website.inputs.nixpkgs.follows = "nixpkgs";
 
     # Snowfall Flake
     flake.url = "github:snowfallorg/flake?ref=v1.4.1";
@@ -60,7 +67,7 @@
     nix-ld.inputs.nixpkgs.follows = "unstable";
 
     # Neovim
-    neovim.url = "github:jakehamilton/neovim";
+    neovim.url = "github:jaduff/neovim";
     neovim.inputs.nixpkgs.follows = "unstable";
 
     # Tmux
@@ -70,12 +77,8 @@
       unstable.follows = "unstable";
     };
 
-    #Sops-nix
-    sops-nix = {
-      url = "github:mic92/sops-nix";
-      inputs.nixpkgs.follows = "nixpkgs";
-      inputs.nixpkgs-stable.follows = "nixpkgs";
-    };
+    #WSL
+    nixos-wsl.url = "github:nix-community/nixos-wsl";
 
     # Binary Cache
     attic = {
@@ -99,28 +102,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    # Discord Replugged
-    replugged.url = "github:LunNova/replugged-nix-flake";
-    replugged.inputs.nixpkgs.follows = "unstable";
-
-    # Discord Replugged plugins / themes
-    discord-tweaks = {
-      url = "github:NurMarvin/discord-tweaks";
-      flake = false;
-    };
-    discord-nord-theme = {
-      url = "github:DapperCore/NordCord";
-      flake = false;
-    };
-
-    # Cows!
-    cowsay = {
-      url = "github:snowfallorg/cowsay?ref=v1.3.0";
-      # TODO: Cowsay currently requires a newer version of ttyd that works
-      # around an issue with whitespace coloring. Until that is fixed,
-      # we won't be able to specify a unique nixpkgs value safely.
-      # inputs.nixpkgs.follows = "nixpkgs";
-    };
 
     # Backup management
     icehouse = {
@@ -151,48 +132,6 @@
     };
 
     # Hosted Sites
-    lasersandfeelings = {
-      url = "github:jakehamilton/lasersandfeelings";
-      inputs.nixpkgs.follows = "nixpkgs";
-      inputs.unstable.follows = "unstable";
-    };
-    pungeonquest = {
-      url = "github:jakehamilton/pungeonquest";
-      inputs.nixpkgs.follows = "nixpkgs";
-      inputs.unstable.follows = "unstable";
-    };
-    scrumfish = {
-      url = "github:jakehamilton/scrumfi.sh";
-      inputs.nixpkgs.follows = "nixpkgs";
-      inputs.unstable.follows = "unstable";
-    };
-    retrospectacle = {
-      url = "github:jakehamilton/retrospectacle.app";
-      inputs.nixpkgs.follows = "nixpkgs";
-      inputs.unstable.follows = "unstable";
-    };
-    jakehamilton-website = {
-      url = "github:jakehamilton/jakehamilton.dev";
-      inputs.nixpkgs.follows = "nixpkgs";
-      inputs.unstable.follows = "unstable";
-    };
-    noop-ai-website = {
-      url = "github:noopai/noop.ai";
-      inputs.nixpkgs.follows = "nixpkgs";
-      inputs.unstable.follows = "unstable";
-    };
-    sokoban-app-website = {
-      url = "https://github.com/jakehamilton/sokoban.app/releases/download/v1/sokoban.app.tar.gz";
-      flake = false;
-    };
-    snowfall-docs = {
-      url = "github:snowfallorg/docs";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-    nixpkgs-news = {
-      url = "github:jakehamilton/nixpkgs.news";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
   };
 
   outputs = inputs: let
@@ -220,18 +159,14 @@
 
       overlays = with inputs; [
         avalanche.overlays.default
-        aux-website.overlays.default
         neovim.overlays.default
         tmux.overlay
         flake.overlays.default
         thaw.overlays.default
         drift.overlays.default
-        cowsay.overlays.default
         icehouse.overlays.default
         rf.overlays.default
-        attic.overlays.default
-        snowfall-docs.overlays.default
-        nixpkgs-news.overlays.default
+        lix-module.overlays.default
       ];
 
       systems.modules.nixos = with inputs; [
@@ -246,6 +181,9 @@
 
       systems.hosts.jasper.modules = with inputs; [
         nixos-hardware.nixosModules.framework-11th-gen-intel
+      ];
+      systems.hosts.wsl.modules = with inputs; [
+        nixos-wsl.nixosModules.wsl
       ];
 
       deploy = lib.mkDeploy {inherit (inputs) self;};
