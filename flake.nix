@@ -131,6 +131,12 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    # sops-nix
+    sops-nix = {
+      url = "github:Mic92/sops-nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     # Hosted Sites
   };
 
@@ -174,6 +180,7 @@
         home-manager.nixosModules.home-manager
         nix-ld.nixosModules.nix-ld
         vault-service.nixosModules.nixos-vault-service
+        sops-nix.nixosModules.sops
         # TODO: Replace plusultra.services.attic now that vault-agent
         # exists and can force override environment files.
         # attic.nixosModules.atticd
