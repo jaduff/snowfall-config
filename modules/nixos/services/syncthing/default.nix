@@ -3,6 +3,7 @@
   config,
   options,
   namespace,
+  pkgs,
   ...
 }: let
   cfg = config.${namespace}.services.syncthing;
@@ -14,6 +15,9 @@ in {
   };
 
   config = mkIf cfg.enable {
+    environment.systemPackages = with pkgs; [
+      syncthing
+    ];
     services.syncthing = {
         enable = true;
 	user = "jaduff";
