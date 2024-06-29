@@ -20,9 +20,8 @@ in {
     environment.systemPackages = with pkgs; [sops ssh-to-age];
     sops = {
       age.sshKeyPaths = ["/etc/ssh/ssh_host_ed25519_key" ];
-      age.keyFile = "/var/lib/sops-nix/key.txt";
-      age.generateKey = true;
-      secrets.example-key = {};
+      #age.keyFile = "/var/lib/sops-nix/key.txt";
+      #age.generateKey = true;
       defaultSopsFile = ./secrets.yaml;
       defaultSopsFormat = "yaml";
       #age.sshKeyPaths = map getKeyPath keys;
