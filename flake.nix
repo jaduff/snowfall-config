@@ -186,9 +186,6 @@
         # attic.nixosModules.atticd
       ];
 
-      systems.hosts.jasper.modules = with inputs; [
-        nixos-hardware.nixosModules.framework-11th-gen-intel
-      ];
       systems.hosts.wsl.modules = with inputs; [
         nixos-wsl.nixosModules.wsl
       ];

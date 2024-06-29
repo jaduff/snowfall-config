@@ -19,9 +19,13 @@ in {
   config = mkIf cfg.enable {
     environment.systemPackages = with pkgs; [sops ssh-to-age];
     sops = {
-      defaultSopsFile = /home/jaduff/Source/snowfall-config/secrets/secrets.yaml;
+      age.sshKeyPaths = ["/etc/ssh/ssh_host_ed25519_key" ];
+      age.keyFile = "/var/lib/sops-nix/key.txt";
+      age.generateKey = true;
+      secrets.example-key = {};
+      defaultSopsFile = ./secrets.yaml;
       defaultSopsFormat = "yaml";
-      age.sshKeyPaths = map getKeyPath keys;
+      #age.sshKeyPaths = map getKeyPath keys;
     };
   };
 

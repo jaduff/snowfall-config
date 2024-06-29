@@ -106,6 +106,8 @@ virtualisation.libvirtd.enable = true;
   # this value at the release version of the first install of this system.
   # Before changing this value read the documentation for this option
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
-  #sopsTest = config.sops.secrets.hello;
+  sops.secrets.hello = {
+    sopsFile = ./secrets.yaml;
+  };
   system.stateVersion = "21.11"; # Did you read the comment?
 }
