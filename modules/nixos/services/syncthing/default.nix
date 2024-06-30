@@ -18,6 +18,12 @@ in {
     environment.systemPackages = with pkgs; [
       syncthing
     ];
+    sops.secrets.ignorant-keyfile= {
+      sopsFile = ./secrets.yaml;
+    };
+    sops.secrets.ignorant-certfile = {
+      sopsFile = ./secrets.yaml;
+    };
     services.syncthing = {
         enable = true;
 	user = "jaduff";

@@ -65,6 +65,7 @@ in {
         locale = enabled;
         time = enabled;
         xkb = enabled;
+        sops-nix = enabled;
       };
     };
   };
