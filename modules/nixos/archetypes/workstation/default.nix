@@ -31,9 +31,6 @@ in {
       tools = {
         appimage-run = enabled;
       };
-      services = {
-        syncthing = enabled;
-      };
     };
   };
 }

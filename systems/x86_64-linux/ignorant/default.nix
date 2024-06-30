@@ -64,6 +64,11 @@ virtualisation.libvirtd.enable = true;
       #steamtinkerlaunch = enabled;
       #r2modman = enabled;
     };
+    services = {
+      syncthing = {
+        ignorant = enabled;
+      };
+    };
 
 
     archetypes = {
