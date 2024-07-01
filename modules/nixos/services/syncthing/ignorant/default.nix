@@ -15,24 +15,25 @@ in {
   };
 
   config = mkIf cfg.enable {
-    environment.systemPackages = with pkgs; [
-      syncthing
-    ];
+    #environment.systemPackages = with pkgs; [
+    #];
     sops.secrets.ignorant-keyfile= {
       sopsFile = ../secrets.yaml;
-      path = "/home/jaduff/.local/state/syncthing/key.pem";
       owner = "jaduff";
+      mode = "0440";
     };
     sops.secrets.ignorant-certfile = {
       sopsFile = ../secrets.yaml;
-      path = "/home/jaduff/.local/state/syncthing/cert.pem";
       owner = "jaduff";
+      mode = "0440";
     };
     services.syncthing = {
         enable = true;
 	user = "jaduff";
 	dataDir = "/home/jaduff/Documents";
-	configDir = "/home/jaduff/Documents/.config/syncthing";
+	#configDir = "/home/jaduff/.local/state/syncthing";
+        key = config.sops.secrets.ignorant-keyfile.path;
+        cert = config.sops.secrets.ignorant-keyfile.path;
         settings = {
           devices = {
             raspberry_pi = {id = "XRZRSGF-57PTWT4-EY2D3WV-RMS5COL-TN6ZRCH-B5PLF5X-OIVULXP-J2GONQL";};
