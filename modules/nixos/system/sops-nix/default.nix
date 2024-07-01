@@ -19,7 +19,7 @@ in {
   config = mkIf cfg.enable {
     environment.systemPackages = with pkgs; [sops ssh-to-age age];
     sops = {
-      age.sshKeyPaths = ["/etc/ssh/ssh_host_ed25519_key" "/home/jaduff/.ssh/id_ed25519"];
+      age.sshKeyPaths = lib.mkForce ["/etc/ssh/ssh_host_ed25519_key" "/home/jaduff/.ssh/id_ed25519"];
       #age.keyFile = "/var/lib/sops-nix/key.txt";
       #age.generateKey = true;
       defaultSopsFile = ./secrets.yaml;
