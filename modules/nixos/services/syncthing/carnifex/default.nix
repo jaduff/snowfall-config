@@ -35,7 +35,7 @@ in {
 	#configDir = "/home/jaduff/Documents/.config/syncthing";
         settings = {
           devices = {
-            raspberry_pi = {id = "CYHA55W-C3LV2ZA-A2IXLFT-KC2A3MC-BEIRJGM-GYVS3QD-LN765BZ-OOZKDA2";};
+            raspberry_pi = {id = "XRZRSGF-57PTWT4-EY2D3WV-RMS5COL-TN6ZRCH-B5PLF5X-OIVULXP-J2GONQL";};
           };
           folders ={
            silverbullet-home = {
