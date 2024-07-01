@@ -15,24 +15,23 @@ in {
   };
 
   config = mkIf cfg.enable {
-    environment.systemPackages = with pkgs; [
-      syncthing
-    ];
     sops.secrets.carnifex-keyfile= {
       sopsFile = ../secrets.yaml;
-      path = "/home/jaduff/.local/state/syncthing/key.pem";
+      mode ="0440";
       owner = "jaduff";
     };
     sops.secrets.carnifex-certfile = {
       sopsFile = ../secrets.yaml;
-      path = "/home/jaduff/.local/state/syncthing/cert.pem";
+      mode ="0440";
       owner = "jaduff";
     };
     services.syncthing = {
         enable = true;
 	user = "jaduff";
 	dataDir = "/home/jaduff/Documents";
-	#configDir = "/home/jaduff/Documents/.config/syncthing";
+	configDir = "/home/jaduff/Documents/.config/syncthing";
+        key = config.sops.secrets.carnifex-keyfile.path;
+        cert = config.sops.secrets.carnifex-certfile.path;
         settings = {
           devices = {
             raspberry_pi = {id = "XRZRSGF-57PTWT4-EY2D3WV-RMS5COL-TN6ZRCH-B5PLF5X-OIVULXP-J2GONQL";};

@@ -29,7 +29,6 @@ home-manager.backupFileExtension = "backup";
   environment.systemPackages = with pkgs; [
     plymouth
     breeze-plymouth
-    syncthingtray
     intel-gpu-tools
     dive
     podman-tui
