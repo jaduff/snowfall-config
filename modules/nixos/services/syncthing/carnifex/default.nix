@@ -32,7 +32,7 @@ in {
         enable = true;
 	user = "jaduff";
 	dataDir = "/home/jaduff/Documents";
-	configDir = "/home/jaduff/Documents/.config/syncthing";
+	#configDir = "/home/jaduff/Documents/.config/syncthing";
         settings = {
           devices = {
             raspberry_pi = {id = "CYHA55W-C3LV2ZA-A2IXLFT-KC2A3MC-BEIRJGM-GYVS3QD-LN765BZ-OOZKDA2";};
