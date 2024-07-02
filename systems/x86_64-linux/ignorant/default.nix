@@ -30,7 +30,6 @@ home-manager.backupFileExtension = "backup";
   environment.systemPackages = with pkgs; [
     plymouth
     breeze-plymouth
-    syncthingtray
     intel-gpu-tools
     dive
     podman-tui
@@ -63,6 +62,11 @@ virtualisation.libvirtd.enable = true;
       #ubports-installer = enabled;
       #steamtinkerlaunch = enabled;
       #r2modman = enabled;
+    };
+    services = {
+      syncthing = {
+        ignorant = enabled;
+      };
     };
 
 

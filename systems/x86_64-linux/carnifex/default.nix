@@ -29,7 +29,6 @@ home-manager.backupFileExtension = "backup";
   environment.systemPackages = with pkgs; [
     plymouth
     breeze-plymouth
-    syncthingtray
     intel-gpu-tools
     dive
     podman-tui
@@ -64,7 +63,7 @@ virtualisation.libvirtd.enable = true;
     services = {
       work-printers = enabled;
       samba = enabled;
-      syncthing = enabled;
+      syncthing = { carnifex = enabled;};
     };
 
 

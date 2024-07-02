@@ -1,0 +1,15 @@
+keys:
+  - &jaduff age152d6285xm2te6dmx37t3sgdf5ytqfefsdkxlrtylr92xxlpzhu0q7l49vf
+  - &hosts:
+    - &ignorant age1a44hucqnrmgjytz8m2vjjv6a4a837q3qj7mmsh56w5w8mxx4nf3stah7p9
+creation_rules:
+  - path_regex: modules/nixos/services/syncthing/[^/]+\.(yaml|json|env|ini|sops)$
+    key_groups:
+      - age:
+          - *jaduff
+          - *ignorant
+  - path_regex: modules/nixos/system/sops-nix/[^/]+\.(yaml|json|env|ini|sops)$
+    key_groups:
+      - age:
+          - *jaduff
+          - *ignorant
