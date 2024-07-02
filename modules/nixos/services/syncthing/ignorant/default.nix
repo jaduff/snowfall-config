@@ -27,13 +27,15 @@ in {
       owner = "jaduff";
       mode = "0440";
     };
+    networking.firewall.allowedTCPPorts = [ 8384 22000 ];
+    networking.firewall.allowedUDPPorts = [ 22000 21027 ];
     services.syncthing = {
         enable = true;
 	user = "jaduff";
 	dataDir = "/home/jaduff/Documents";
-	#configDir = "/home/jaduff/.local/state/syncthing";
+	configDir = "/home/jaduff/.local/state/syncthing";
         key = config.sops.secrets.ignorant-keyfile.path;
-        cert = config.sops.secrets.ignorant-keyfile.path;
+        cert = config.sops.secrets.ignorant-certfile.path;
         settings = {
           devices = {
             raspberry_pi = {id = "XRZRSGF-57PTWT4-EY2D3WV-RMS5COL-TN6ZRCH-B5PLF5X-OIVULXP-J2GONQL";};

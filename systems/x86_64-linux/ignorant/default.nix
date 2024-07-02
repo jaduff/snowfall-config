@@ -34,7 +34,6 @@ home-manager.backupFileExtension = "backup";
     dive
     podman-tui
     podman-compose
-    syncthingtray
     #plusultra.kalidoface
   ];
 virtualisation.libvirtd.enable = true;
