@@ -3,15 +3,13 @@
 
   inputs = {
     # NixPkgs (nixos-23.11)
-    #nixpkgs.url = "github:nixos/nixpkgs/nixos-23.11";
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-24.05";
 
     # NixPkgs Unstable (nixos-unstable)
     unstable.url = "github:nixos/nixpkgs/nixos-unstable";
 
     # Home Manager (release-22.05)
-    #home-manager.url = "github:nix-community/home-manager/release-23.11";
-    home-manager.url = "github:nix-community/home-manager/master";
+    home-manager.url = "github:nix-community/home-manager/release-24.05";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
 
     lix = {
@@ -33,8 +31,8 @@
     nixos-generators.inputs.nixpkgs.follows = "nixpkgs";
 
     # Snowfall Lib
-    snowfall-lib.url = "github:snowfallorg/lib?ref=v3.0.0";
-    #snowfall-lib.url = "path:/home/short/work/@snowfallorg/lib";
+    snowfall-lib.url = "github:snowfallorg/lib?ref=v3.0.3";
+    # snowfall-lib.url = "path:/home/short/work/@snowfallorg/lib";
     snowfall-lib.inputs.nixpkgs.follows = "nixpkgs";
 
     # Avalanche
@@ -67,7 +65,7 @@
     nix-ld.inputs.nixpkgs.follows = "unstable";
 
     # Neovim
-    neovim.url = "github:jaduff/neovim";
+    neovim.url = "github:jakehamilton/neovim";
     neovim.inputs.nixpkgs.follows = "unstable";
 
     # Tmux
@@ -101,7 +99,6 @@
       url = "github:DeterminateSystems/flake-checker";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
 
     # Backup management
     icehouse = {
