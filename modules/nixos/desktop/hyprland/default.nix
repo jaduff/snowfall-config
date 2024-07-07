@@ -260,6 +260,12 @@ hyprland
                    "$mod SHIFT Control_L, 9, movetoworkspacesilent, 9"
                    "$mod SHIFT Control_L, 0, movetoworkspacesilent, 10"
 
+		   # Resize window
+		   "$mainMod SHIFT, right, resizeactive, 10 0"
+                   "$mainMod SHIFT, left, resizeactive, -10 0"
+                   "$mainMod SHIFT, up, resizeactive, 0 -10"
+                   "$mainMod SHIFT, down, resizeactive, 0 10"
+
                    # Desktop shell integration
                    #"$mod, s, pass, ^(avalanche-bar).*$"
 
