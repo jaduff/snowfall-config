@@ -19,7 +19,7 @@ in {
       common = enabled;
       desktop = enabled;
       games = enabled;
-      social = enabled;
+      #social = enabled;
       media = enabled;
     };
   };
