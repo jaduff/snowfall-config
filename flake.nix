@@ -118,11 +118,6 @@
       flake = false;
     };
 
-    bibata-cursors = {
-      url = "github:suchipi/Bibata_Cursor";
-      flake = false;
-    };
-
     rf = {
       url = "github:jakehamilton/rf";
       inputs.nixpkgs.follows = "nixpkgs";

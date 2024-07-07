@@ -18,7 +18,7 @@ in {
   config = mkIf cfg.enable {
     plusultra = {
       desktop = {
-        kde = enabled;
+        hyprland = enabled;
 
         addons = {wallpapers = enabled;};
       };
@@ -35,6 +35,9 @@ in {
 
       tools = {
         noto-fonts-emoji-blob-bin = enabled;
+      };
+      services = {
+        wireless = disabled;
       };
     };
   };

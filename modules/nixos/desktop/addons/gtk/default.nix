@@ -19,12 +19,6 @@ in {
         "The name of the GTK theme to apply.";
       pkg = mkOpt package pkgs.nordic "The package to use for the theme.";
     };
-    cursor = {
-      name =
-        mkOpt str "Bibata-Modern-Ice"
-        "The name of the cursor theme to apply.";
-      pkg = mkOpt package pkgs.plusultra.bibata-cursors "The package to use for the cursor theme.";
-    };
     icon = {
       name =
         mkOpt str "Papirus"
@@ -36,12 +30,7 @@ in {
   config = mkIf cfg.enable {
     environment.systemPackages = [
       cfg.icon.pkg
-      cfg.cursor.pkg
     ];
-
-    environment.sessionVariables = {
-      XCURSOR_THEME = cfg.cursor.name;
-    };
 
     plusultra.home.extraOptions = {
       gtk = {
@@ -50,11 +39,6 @@ in {
         theme = {
           name = cfg.theme.name;
           package = cfg.theme.pkg;
-        };
-
-        cursorTheme = {
-          name = cfg.cursor.name;
-          package = cfg.cursor.pkg;
         };
 
         iconTheme = {
@@ -87,7 +71,6 @@ in {
 
             [org/gnome/desktop/interface]
             gtk-theme='${cfg.theme.name}'
-            cursor-theme='${cfg.cursor.name}'
             icon-theme='${cfg.icon.name}'
           '';
         };
