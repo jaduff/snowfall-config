@@ -36,6 +36,9 @@ home-manager.backupFileExtension = "backup";
     archetypes = {
     };
 
+    suits = {
+      common;
+    };
     };
 
 
