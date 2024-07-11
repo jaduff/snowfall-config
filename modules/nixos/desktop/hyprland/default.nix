@@ -5,10 +5,18 @@
   pkgs,
   namespace,
   ...
-}: let
+}:
+let
   cfg = config.${namespace}.desktop.hyprland;
 
-  inherit (lib) mkIf mkEnableOption mkOption mkMerge types optional;
+  inherit (lib)
+    mkIf
+    mkEnableOption
+    mkOption
+    mkMerge
+    types
+    optional
+    ;
   inherit (lib.${namespace}) enabled colors;
 
   pamixer = lib.getExe pkgs.pamixer;
@@ -26,7 +34,8 @@
         ;;
     esac
   '';
-in {
+in
+{
   options.${namespace}.desktop.hyprland = {
     enable = mkEnableOption "Hyprland";
 
@@ -37,14 +46,18 @@ in {
     };
 
     wallpaper = mkOption {
-      type = types.oneOf [types.package types.path types.str];
+      type = types.oneOf [
+        types.package
+        types.path
+        types.str
+      ];
       default = pkgs.plusultra.wallpapers.nord-rainbow-dark-nix;
       description = "The wallpaper to use.";
     };
 
     settings = mkOption {
       type = types.attrs;
-      default = {};
+      default = { };
       description = "Extra Hyprland settings to apply.";
     };
   };
@@ -64,7 +77,7 @@ in {
 
     environment.sessionVariables.WLR_NO_HARDWARE_CURSORS = "1";
 
-    security.pam.services.hyprlock = {};
+    security.pam.services.hyprlock = { };
 
     services.greetd = {
       enable = true;
@@ -146,8 +159,6 @@ in {
                 general = {
                   layout = "master";
 
-                  no_cursor_warps = true;
-
                   border_size = 2;
                   "col.active_border" = "0xff${colors.without-hash colors.nord.nord10}";
                   "col.inactive_border" = "0x00${colors.without-hash colors.nord.nord0}";
@@ -156,7 +167,6 @@ in {
                 };
 
                 master = {
-                  new_is_master = false;
                   orientation = "center";
                   always_center_master = true;
                 };
@@ -269,12 +279,9 @@ in {
                   ", XF86AudioRaiseVolume, exec, volumectl up 5"
                 ];
 
-                windowrule = [
-                ];
+                windowrule = [ ];
 
-                layerrule = [
-                  "noanim, ^avalanche-"
-                ];
+                layerrule = [ "noanim, ^avalanche-" ];
 
                 # Programs to run on startup
                 exec-once =
@@ -283,7 +290,7 @@ in {
                     # "systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP"
                   ]
                   ++ optional config.${namespace}.desktop.addons.gtk.enable
-                  "${cfg.package}/bin/hyprctl setcursor \"${config.${namespace}.desktop.addons.gtk.cursor.name}\" 16";
+                    "${cfg.package}/bin/hyprctl setcursor \"${config.${namespace}.desktop.addons.gtk.cursor.name}\" 16";
 
                 # Decorations
                 decoration = {

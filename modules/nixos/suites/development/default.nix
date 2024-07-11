@@ -7,7 +7,8 @@
   ...
 }:
 with lib;
-with lib.${namespace}; let
+with lib.${namespace};
+let
   cfg = config.${namespace}.suites.development;
   apps = {
     vscode = enabled;
@@ -21,11 +22,10 @@ with lib.${namespace}; let
     mods = enabled;
     vim = enabled;
   };
-in {
+in
+{
   options.${namespace}.suites.development = with types; {
-    enable =
-      mkBoolOpt false
-      "Whether or not to enable common development configuration.";
+    enable = mkBoolOpt false "Whether or not to enable common development configuration.";
   };
 
   config = mkIf cfg.enable {
@@ -51,7 +51,9 @@ in {
         qmk = enabled;
       };
 
-      virtualisation = {podman = enabled;};
+      virtualisation = {
+        podman = enabled;
+      };
     };
   };
 }

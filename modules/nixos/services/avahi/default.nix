@@ -4,11 +4,13 @@
   options,
   namespace,
   ...
-}: let
+}:
+let
   cfg = config.${namespace}.services.avahi;
 
   inherit (lib) types mkEnableOption mkIf;
-in {
+in
+{
   options.${namespace}.services.avahi = with types; {
     enable = mkEnableOption "Avahi";
   };
@@ -16,7 +18,7 @@ in {
   config = mkIf cfg.enable {
     services.avahi = {
       enable = true;
-      nssmdns = true;
+      nssmdns4 = true;
       publish = {
         enable = true;
         addresses = true;

@@ -4,7 +4,8 @@
   pkgs,
   namespace,
   ...
-}: let
+}:
+let
   inherit (lib) mkEnableOption mkIf;
 
   cfg = config.${namespace}.cli-apps.zsh;
@@ -30,7 +31,8 @@
       clear
     fi
   '';
-in {
+in
+{
   options.${namespace}.cli-apps.zsh = {
     enable = mkEnableOption "ZSH";
   };
@@ -39,9 +41,10 @@ in {
     programs = {
       zsh = {
         enable = true;
-        enableAutosuggestions = true;
         enableCompletion = true;
         syntaxHighlighting.enable = true;
+
+        autosuggestion.enable = true;
 
         initExtra = ''
           # Fix an issue with tmux.

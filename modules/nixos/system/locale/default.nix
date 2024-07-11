@@ -7,9 +7,11 @@
   ...
 }:
 with lib;
-with lib.${namespace}; let
+with lib.${namespace};
+let
   cfg = config.${namespace}.system.locale;
-in {
+in
+{
   options.${namespace}.system.locale = with types; {
     enable = mkBoolOpt false "Whether or not to manage locale settings.";
   };
@@ -18,6 +20,8 @@ in {
    # i18n.defaultLocale = "en_US.UTF-8";
    i18n.defaultLocale = "en_AU.UTF-8";
 
-    console = {keyMap = mkForce "us";};
+    console = {
+      keyMap = mkForce "us";
+    };
   };
 }
