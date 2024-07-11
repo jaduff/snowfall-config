@@ -37,7 +37,7 @@ home-manager.backupFileExtension = "backup";
     };
 
     suits = {
-      common;
+      common
     };
     };
 
