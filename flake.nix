@@ -47,6 +47,7 @@
 
     # Snowfall Thaw
     thaw.url = "github:snowfallorg/thaw?ref=v1.0.7";
+    thaw.inputs.nixpkgs.follows = "nixpkgs";
 
     # Snowfall Drift
     drift.url = "github:snowfallorg/drift";
