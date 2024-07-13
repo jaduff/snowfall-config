@@ -36,10 +36,10 @@ home-manager.backupFileExtension = "backup";
     archetypes = {
     };
 
-    suits = {
-      common
+    suites = {
+      common = enabled;
     };
-    };
+  };
 
 
   # WiFi is typically unused on the desktop. Enable this service

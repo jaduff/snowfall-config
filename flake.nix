@@ -66,7 +66,7 @@
     nix-ld.inputs.nixpkgs.follows = "unstable";
 
     # Neovim
-    neovim.url = "github:jakehamilton/neovim";
+    neovim.url = "github:jaduff/neovim";
     neovim.inputs.nixpkgs.follows = "unstable";
 
     # Tmux

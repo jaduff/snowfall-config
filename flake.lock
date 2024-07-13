@@ -1233,15 +1233,15 @@
         "snowfall-lib": "snowfall-lib_5"
       },
       "locked": {
-        "lastModified": 1720391189,
-        "narHash": "sha256-dUn2PKgWwHhmvz+bO7SUeu1KC5DM5gHi2nc6mJgUwcg=",
-        "owner": "jakehamilton",
+        "lastModified": 1720849856,
+        "narHash": "sha256-Inu2Vu8HnPEjKu7WwEopi7gyvJEeGGefoJeoD9llB9g=",
+        "owner": "jaduff",
         "repo": "neovim",
-        "rev": "40b03390dc752309274c11e7fe4edf13e6128f24",
+        "rev": "169b4284fd3ac306bde9426d648e3e5753236879",
         "type": "github"
       },
       "original": {
-        "owner": "jakehamilton",
+        "owner": "jaduff",
         "repo": "neovim",
         "type": "github"
       }
