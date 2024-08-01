@@ -27,6 +27,7 @@ in
       };
 
       apps = {
+	musescore = enabled;
         firefox = enabled;
         vlc = enabled;
         yt-music = enabled;
