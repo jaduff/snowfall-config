@@ -9,7 +9,7 @@
   services.xserver.enable = true;
 
   # Enable the Plasma 6 Desktop Environment.
-  services.xserver.displayManager.sddm.wayland.enable = true;
+  services.xserver.displayManager.sddm.enable = true;
   services.desktopManager.plasma6.enable = true;
   
 
