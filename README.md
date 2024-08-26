@@ -64,7 +64,6 @@ See the following example for how to apply overlays from this flake.
 				plusultra.overlays.deploy-rs
 				plusultra.overlays.discord
 				plusultra.overlays.firefox
-				plusultra.overlays.flyctl
 				plusultra.overlays.freetube
 				plusultra.overlays.gamescope
 				plusultra.overlays.gnome

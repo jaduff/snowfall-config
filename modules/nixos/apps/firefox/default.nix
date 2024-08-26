@@ -127,6 +127,11 @@ in
                 install_url = "https://addons.mozilla.org/firefox/downloads/file/4269135/enhancer_for_youtube-2.0.124.2.xpi";
                 installation_mode = "force_installed";
               };
+              # Australian Dictionary
+              "en-AU@dictionaries.addons.mozilla.org" = {
+                install_url = "https://addons.mozilla.org/en-US/firefox/addon/english-australian-dictionary/";
+                installation_mode = "force_installed";
+              };
         };
   
       };
