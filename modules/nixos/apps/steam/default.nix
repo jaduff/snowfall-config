@@ -19,7 +19,10 @@ in
   config = mkIf cfg.enable {
     programs.steam.enable = true;
     programs.steam.remotePlay.openFirewall = true;
-
+    networking.firewall.allowedTCPPorts = [27040 6073];
+    networking.firewall.allowedTCPPortRanges = [{from=2300;to=2400;}];
+    networking.firewall.allowedUDPPorts = [47630 6073];
+    networking.firewall.allowedUDPPortRanges = [{ from=27031; to=27036; } {from=2300; to=2400;}];
     hardware.steam-hardware.enable = true;
 
     # Enable GameCube controller support.
