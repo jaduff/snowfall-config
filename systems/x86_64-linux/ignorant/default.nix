@@ -64,6 +64,7 @@ virtualisation.libvirtd.enable = true;
       #r2modman = enabled;
     };
     services = {
+      ollama = enabled;
       syncthing = {
         ignorant = enabled;
       };
