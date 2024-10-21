@@ -20,7 +20,6 @@ in
     plusultra = {
       apps = {
         pitivi = enabled;
-        obs = enabled;
       };
     };
   };
