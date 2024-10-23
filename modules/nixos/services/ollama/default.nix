@@ -21,5 +21,6 @@ in {
 	  acceleration = "cuda";
           listenAddress = "0.0.0.0:11434";
     };
+    networking.firewall.allowedTCPPorts = [ 8000 ];
 };
 }
