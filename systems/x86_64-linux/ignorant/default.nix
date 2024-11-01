@@ -36,6 +36,7 @@ home-manager.backupFileExtension = "backup";
     podman-compose
     #plusultra.kalidoface
   ];
+  hardware.nvidia-container-toolkit.enable = true;
 virtualisation.libvirtd.enable = true;
 #  boot.binfmt.emulatedSystems = ["aarch64-linux"];
 
