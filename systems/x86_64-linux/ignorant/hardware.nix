@@ -48,10 +48,10 @@ in {
   # networking.interfaces.wlp9s0.useDHCP = lib.mkDefault true;
 
  # Enable OpenGL
-  hardware.opengl = {
+  hardware.graphics = {
     enable = true;
     #driSupport = true;
-    driSupport32Bit = true;
+    #driSupport32Bit = true;
   };
   hardware.bluetooth.enable = true;
 

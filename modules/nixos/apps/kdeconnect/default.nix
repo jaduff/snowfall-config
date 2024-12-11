@@ -14,5 +14,5 @@ in {
     enable = mkBoolOpt false "Whether or not to enable kdeconnect.";
   };
 
-  config = mkIf cfg.enable {environment.systemPackages = with pkgs; [kdeconnect];};
+  config = mkIf cfg.enable {environment.systemPackages = with pkgs; [kdePackages.kdeconnect-kde];};
 }
