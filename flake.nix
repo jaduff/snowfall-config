@@ -12,14 +12,14 @@
     home-manager.url = "github:nix-community/home-manager/release-24.05";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
 
-    lix = {
-      #url = "git+https://git.lix.systems/lix-project/lix?ref=refs/tags/2.90-beta.1";
-      url = "git+https://git.lix.systems/lix-project/lix";
-      flake = false;
-    };
+    #lix = {
+    #  url = "git+https://git.lix.systems/lix-project/lix";
+    #  flake = false;
+    #};
     lix-module = {
-      url = "git+https://git.lix.systems/lix-project/nixos-module";
-      inputs.lix.follows = "lix";
+      url = "https://git.lix.systems/lix-project/nixos-module/archive/2.91.1-2.tar.gz";
+      #url = "git+https://git.lix.systems/lix-project/nixos-module";
+      #inputs.lix.follows = "lix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
@@ -176,7 +176,7 @@
       systems.modules.nixos = with inputs; [
         avalanche.nixosModules."avalanche/desktop"
         home-manager.nixosModules.home-manager
-        nix-ld.nixosModules.nix-ld
+        #nix-ld.nixosModules.nix-ld
         vault-service.nixosModules.nixos-vault-service
         sops-nix.nixosModules.sops
         # TODO: Replace plusultra.services.attic now that vault-agent
