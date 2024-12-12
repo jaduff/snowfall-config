@@ -62,10 +62,6 @@ in
       enable = true;
       openFirewall = true;
 
-      extraConfig = ''
-        browseable = ${bool-to-yes-no cfg.browseable}
-      '';
-
       shares = mapAttrs (
         name: value:
         {

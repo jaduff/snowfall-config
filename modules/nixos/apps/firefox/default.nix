@@ -114,17 +114,17 @@ in
               };
               # lastpass
               "support@lastpass.com" = {
-                install_url = "https://addons.mozilla.org/firefox/downloads/file/4246455/lastpass_password_manager-4.127.0.1.xpi";
+                install_url = "https://addons.mozilla.org/firefox/downloads/file/4357922/lastpass_password_manager-4.134.0.xpi";
                 installation_mode = "force_installed";
               };
               # Kagi
               "search@kagi.com" = {
-                install_url = "https://addons.mozilla.org/firefox/downloads/file/4173642/kagi_search_for_firefox-0.3.8.xpi";
+                install_url = "https://addons.mozilla.org/firefox/downloads/file/4389383/kagi_search_for_firefox-0.7.3.1.xpi";
                 installation_mode = "force_installed";
               };
               # Kagi
               "enhancerforyoutube@maximerf.addons.mozilla.org" = {
-                install_url = "https://addons.mozilla.org/firefox/downloads/file/4269135/enhancer_for_youtube-2.0.124.2.xpi";
+                install_url = "https://addons.mozilla.org/firefox/downloads/file/4393561/enhancer_for_youtube-2.0.130.1.xpi";
                 installation_mode = "force_installed";
               };
               # Australian Dictionary
