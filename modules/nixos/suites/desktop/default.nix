@@ -36,6 +36,7 @@ in
         nextcloud-client = enabled;
         kdeconnect = enabled;
 	whatsapp-for-linux = enabled;
+	emacs = enabled;
       };
 
       tools = {

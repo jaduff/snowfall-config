@@ -62,8 +62,8 @@
     deploy-rs.inputs.nixpkgs.follows = "nixpkgs";
 
     # Run unpatched dynamically compiled binaries
-    nix-ld.url = "github:Mic92/nix-ld";
-    nix-ld.inputs.nixpkgs.follows = "unstable";
+    #nix-ld.url = "github:Mic92/nix-ld";
+    #nix-ld.inputs.nixpkgs.follows = "unstable";
 
     # Neovim
     neovim.url = "github:jaduff/neovim";
