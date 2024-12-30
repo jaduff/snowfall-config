@@ -16,5 +16,10 @@ in {
 
   config = mkIf cfg.enable {
     environment.systemPackages = with pkgs; [emacs];
+    environment.interactiveShellInit = ''
+      alias doom='.config/emacs/bin/doom'
+    '';
+
   };
+
 }
