@@ -45,14 +45,14 @@ virtualisation.libvirtd.enable = true;
 #  boot.kernelModules = ["tun"];
 
 
-#  services.minecraft-server = {
-#    enable = false;
-#    eula = true;
-#    declarative = true;
-#    serverProperties = {
-#      server-port = 43000;
-#    };
-#  };
+  services.minecraft-server = {
+    enable = true;
+    eula = true;
+    declarative = true;
+    serverProperties = {
+      server-port = 43000;
+    };
+  };
 
   plusultra = {
     services = {
