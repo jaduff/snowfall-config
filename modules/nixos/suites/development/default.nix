@@ -16,7 +16,7 @@ let
   };
   cli-apps = {
     tmux = enabled;
-    neovim = disabled;
+    neovim = enabled;
     yubikey = enabled;
     prisma = disabled;
     mods = enabled;

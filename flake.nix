@@ -65,10 +65,6 @@
     #nix-ld.url = "github:Mic92/nix-ld";
     #nix-ld.inputs.nixpkgs.follows = "unstable";
 
-    # Neovim
-    neovim.url = "github:jaduff/neovim";
-    neovim.inputs.nixpkgs.follows = "unstable";
-
     # Tmux
     tmux.url = "github:jakehamilton/tmux";
     tmux.inputs = {
@@ -163,7 +159,6 @@
 
       overlays = with inputs; [
         avalanche.overlays.default
-        neovim.overlays.default
         tmux.overlay
         flake.overlays.default
         thaw.overlays.default
