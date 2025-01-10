@@ -48,9 +48,11 @@ virtualisation.libvirtd.enable = true;
   services.minecraft-server = {
     enable = true;
     eula = true;
+    openFirewall = true;
     declarative = true;
     serverProperties = {
       server-port = 43000;
+      level-seed = "jellyfish";
     };
   };
 

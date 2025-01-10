@@ -17,7 +17,6 @@ in
   };
 
   config = mkIf cfg.enable {
-    networking.firewall.allowedTCPPorts = [43000];
     environment.systemPackages = with pkgs; [
       lutris
       # Needed for some installers like League of Legends
