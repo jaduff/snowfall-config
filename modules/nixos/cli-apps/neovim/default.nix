@@ -17,11 +17,27 @@ in
   };
 
   config = mkIf cfg.enable {
+	programs.neovim = {
+	  enable = true;
+	  configure = {
+	    customRC = ''
+	      set number
+	      set cc=80
+	      set list
+	      set listchars=tab:→\ ,space:·,nbsp:␣,trail:•,eol:¶,precedes:«,extends:»
+	      if &diff
+		colorscheme blue
+	      endif
+	    '';
+	    packages.myVimPackage= with pkgs.vimPlugins; {
+	      start = [ ctrlp telescope-nvim ];
+	    };
+	  };
+	};
     environment.systemPackages = with pkgs; [
       # FIXME: As of today (2022-12-09), `page` no longer works with my Neovim
       # configuration. Either something in my configuration is breaking it or `page` is busted.
       # page
-      neovim
     ];
 
     environment.variables = {
