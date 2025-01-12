@@ -19,6 +19,9 @@ in
   config = mkIf cfg.enable {
 	programs.neovim = {
 	  enable = true;
+	  defaultEditor = true;
+	  viAlias = true;
+	  vimAlias = true;
 	  configure = {
 	    customRC = ''
 	      set number
