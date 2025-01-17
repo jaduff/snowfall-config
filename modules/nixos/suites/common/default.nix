@@ -39,6 +39,7 @@ in {
         bottom = enabled;
         btop = enabled;
         borgbackup = enabled;
+	ripgrip = enabled;
       };
 
       hardware = {

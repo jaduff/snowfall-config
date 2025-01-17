@@ -29,6 +29,9 @@ in
         office = enabled;
       };
 
+      services = {
+	flatpak = enabled;
+      };
       tools = {
         appimage-run = enabled;
       };
