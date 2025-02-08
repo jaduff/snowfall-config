@@ -30,13 +30,11 @@ in
 	musescore = enabled;
         firefox = enabled;
         vlc = enabled;
-        yt-music = enabled;
         gparted = enabled;
         telegram-desktop = enabled;
         nextcloud-client = enabled;
         kdeconnect = enabled;
 	whatsapp-for-linux = enabled;
-	emacs = enabled;
       };
 
       tools = {

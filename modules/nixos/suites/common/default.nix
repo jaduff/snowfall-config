@@ -26,20 +26,16 @@ in {
 
       cli-apps = {
         flake = enabled;
-        thaw = enabled;
         vim = enabled;
       };
 
       tools = {
         git = enabled;
         misc = enabled;
-        fup-repl = enabled;
         comma = enabled;
-        nix-ld = disabled;
         bottom = enabled;
         btop = enabled;
         borgbackup = enabled;
-	ripgrip = enabled;
       };
 
       hardware = {
@@ -51,7 +47,6 @@ in {
       services = {
         printing = enabled;
         openssh = enabled;
-        #tailscale = enabled;
       };
 
       security = {

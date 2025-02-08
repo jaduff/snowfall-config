@@ -26,12 +26,10 @@ in {
 
       cli-apps = {
         flake = enabled;
-        thaw = enabled;
       };
 
       tools = {
         git = enabled;
-        fup-repl = enabled;
         comma = enabled;
         bottom = enabled;
         direnv = enabled;
@@ -44,7 +42,6 @@ in {
 
       services = {
         openssh = enabled;
-        #tailscale = enabled;
       };
 
       security = {

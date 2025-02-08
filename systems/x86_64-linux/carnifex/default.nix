@@ -78,13 +78,6 @@ virtualisation.libvirtd.enable = true;
       xkb = enabled;
     };
 
-    desktop.gnome = {
-      wallpaper = {
-        light = pkgs.plusultra.wallpapers.nord-rainbow-light-nix-ultrawide;
-        dark = pkgs.plusultra.wallpapers.nord-rainbow-dark-nix-ultrawide;
-      };
-      #monitors = ./monitors.xml;
-    };
 
 #    virtualisation.kvm = {
 #      enable = true;

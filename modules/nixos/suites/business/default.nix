@@ -19,7 +19,6 @@ in
   config = mkIf cfg.enable {
     plusultra = {
       apps = {
-        frappe-books = enabled;
       };
     };
   };

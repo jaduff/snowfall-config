@@ -11,14 +11,10 @@ with lib.${namespace};
 let
   cfg = config.${namespace}.suites.development;
   apps = {
-    vscode = enabled;
-    yubikey = enabled;
   };
   cli-apps = {
     tmux = enabled;
     neovim = enabled;
-    yubikey = enabled;
-    prisma = disabled;
     mods = enabled;
     vim = enabled;
   };
@@ -44,7 +40,6 @@ in
         # attic = enabled;
         #at = enabled;
         direnv = enabled;
-        http = enabled;
       };
 
       virtualisation = {

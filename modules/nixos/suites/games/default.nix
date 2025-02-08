@@ -12,11 +12,9 @@ let
   cfg = config.${namespace}.suites.games;
   apps = {
     steam = enabled;
-    prismlauncher = enabled;
     lutris = enabled;
     winetricks = enabled;
     protontricks = enabled;
-    bottles = enabled;
   };
   cli-apps = {
     wine = enabled;

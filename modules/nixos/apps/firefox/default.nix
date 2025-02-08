@@ -32,16 +32,12 @@ in
   config = mkIf cfg.enable {
     plusultra.desktop.addons.firefox-nordic-theme = enabled;
 
-    services.gnome.gnome-browser-connector.enable = config.${namespace}.desktop.gnome.enable;
 
     plusultra.home = {
       file = mkMerge [
         {
           ".mozilla/native-messaging-hosts/com.dannyvankooten.browserpass.json".source = "${pkgs.browserpass}/lib/mozilla/native-messaging-hosts/com.dannyvankooten.browserpass.json";
         }
-        (mkIf config.${namespace}.desktop.gnome.enable {
-          ".mozilla/native-messaging-hosts/org.gnome.chrome_gnome_shell.json".source = "${pkgs.chrome-gnome-shell}/lib/mozilla/native-messaging-hosts/org.gnome.chrome_gnome_shell.json";
-        })
       ];
 
       extraOptions = {
@@ -51,7 +47,7 @@ in
 
           nativeMessagingHosts = [
             pkgs.browserpass
-          ] ++ optional config.${namespace}.desktop.gnome.enable pkgs.gnomeExtensions.gsconnect;
+          ];
 
           profiles = {
             home= {
