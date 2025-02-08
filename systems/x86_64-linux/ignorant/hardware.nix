@@ -21,23 +21,28 @@ in {
   boot.kernelModules = [ "kvm-amd" "dm-crypt" "mt7921e" ];
   boot.extraModulePackages = [ ];
 
-  boot.initrd.luks.devices.cryptroot.device = "/dev/disk/by-uuid/32496f33-7070-47bf-a025-c3cc159a1c3c";
+  boot.initrd.luks.devices.cryptroot.device = "/dev/disk/by-uuid/96009f40-a467-492a-9d14-2d767f1859fb";
 
   services.fstrim.enable = true;
-
   fileSystems."/" =
-    { device = "/dev/disk/by-uuid/7f13f428-ef40-40d4-b828-f3d9617cd71d";
+    { device = "/dev/disk/by-uuid/1017afb3-547a-4d34-823b-b238c66d2d77";
       fsType = "btrfs";
     };
 
   fileSystems."/boot" =
-    { device = "/dev/disk/by-uuid/5926-AB71";
+    { device = "/dev/disk/by-uuid/CCC9-5F89";
       fsType = "vfat";
     };
 
+  fileSystems."/home" =
+    { device = "/dev/disk/by-uuid/dd7c2c24-ed5d-4c81-a2b8-8a56181e83c2";
+      fsType = "btrfs";
+    };
+
   swapDevices =
-    [ { device = "/dev/disk/by-uuid/82bcfe12-850c-4795-8a07-f977344a0c5c"; }
+    [ { device = "/dev/disk/by-uuid/44bed399-68e7-4eae-9e78-d6e6c82f3fc1"; }
     ];
+
 
   # Enables DHCP on each ethernet and wireless interface. In case of scripted networking
   # (the default) this is the recommended approach. When using systemd-networkd it's
