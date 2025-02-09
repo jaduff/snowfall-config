@@ -118,7 +118,7 @@ in
                 source ${pkgs.zsh-vi-mode}/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
               ''
               + optionalString cfg.prompt-init ''
-                ${pkgs.toilet}/bin/toilet -f future "Plus Ultra" --gay
+                ${pkgs.toilet}/bin/toilet -f future "Orchid" --gay
               '';
 
             shellAliases = {

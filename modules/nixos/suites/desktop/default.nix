@@ -27,6 +27,7 @@ in
       };
 
       apps = {
+	veracrypt = enabled;
 	musescore = enabled;
         firefox = enabled;
         vlc = enabled;
