@@ -67,6 +67,10 @@ virtualisation.libvirtd.enable = true;
       #steamtinkerlaunch = enabled;
       #r2modman = enabled;
     };
+    security = {
+      doas = disabled;
+      sudo = enabled;
+    };
     services = {
       ollama = enabled;
       syncthing = {

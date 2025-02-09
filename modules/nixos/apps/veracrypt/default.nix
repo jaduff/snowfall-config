@@ -16,5 +16,5 @@ in
     enable = mkBoolOpt false "Whether or not to enable Veracrypt.";
   };
 
-  config = mkIf cfg.enable { environment.systemPackages = with pkgs; [ veracrypt ]; };
+  config = mkIf cfg.enable { environment.systemPackages = with pkgs; [ plusultra.veracrypt ]; };
 }

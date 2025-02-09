@@ -60,6 +60,10 @@ virtualisation.libvirtd.enable = true;
       #r2modman = enabled;
     };
 
+    security = {
+      doas = enabled;
+      sudo = disabled;
+    };
     services = {
       work-printers = enabled;
       samba = enabled;
