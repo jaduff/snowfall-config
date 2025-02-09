@@ -21,7 +21,6 @@ let
     pinentry-program ${pkgs.pinentry-gnome3}/bin/pinentry-gnome3
   '';
 
-  guide = "${inputs.yubikey-guide}/README.md";
 
   theme = pkgs.fetchFromGitHub {
     owner = "jez";
@@ -30,32 +29,8 @@ let
     sha256 = "1h48yqffpaz437f3c9hfryf23r95rr319lrb3y79kxpxbc9hihxb";
   };
 
-  guideHTML = pkgs.runCommand "yubikey-guide" { } ''
-    ${pkgs.pandoc}/bin/pandoc \
-      --standalone \
-      --metadata title="Yubikey Guide" \
-      --from markdown \
-      --to html5+smart \
-      --toc \
-      --template ${theme}/template.html5 \
-      --css ${theme}/docs/css/theme.css \
-      --css ${theme}/docs/css/skylighting-solarized-theme.css \
-      -o $out \
-      ${guide}
-  '';
 
-  guideDesktopItem = pkgs.makeDesktopItem {
-    name = "yubikey-guide";
-    desktopName = "Yubikey Guide";
-    genericName = "View Yubikey Guide in a web browser";
-    exec = "${pkgs.xdg-utils}/bin/xdg-open ${guideHTML}";
-    icon = ./yubico-icon.svg;
-    categories = [ "System" ];
-  };
 
-  reload-yubikey = pkgs.writeShellScriptBin "reload-yubikey" ''
-    ${pkgs.gnupg}/bin/gpg-connect-agent "scd serialno" "learn --force" /bye
-  '';
 in
 {
   options.${namespace}.security.gpg = with types; {
@@ -65,7 +40,6 @@ in
 
   config = mkIf cfg.enable {
     services.pcscd.enable = true;
-    services.udev.packages = with pkgs; [ yubikey-personalization ];
 
     # NOTE: This should already have been added by programs.gpg, but
     # keeping it here for now just in case.
@@ -91,8 +65,6 @@ in
       pinentry-qt
       pinentry-gnome3
       paperkey
-      guideDesktopItem
-      reload-yubikey
     ];
 
     programs = {
@@ -110,8 +82,6 @@ in
       home.file = {
         ".gnupg/.keep".text = "";
 
-        ".gnupg/yubikey-guide.md".source = guide;
-        ".gnupg/yubikey-guide.html".source = guideHTML;
 
         ".gnupg/gpg.conf".source = gpgConf;
         ".gnupg/gpg-agent.conf".text = gpgAgentConf;

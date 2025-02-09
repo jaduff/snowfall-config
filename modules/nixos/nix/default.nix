@@ -45,13 +45,10 @@ in
     environment.systemPackages = with pkgs; [
       plusultra.nixos-revision
       (plusultra.nixos-hosts.override { hosts = inputs.self.nixosConfigurations; })
-      deploy-rs
       nixfmt-rfc-style
       nix-index
       nix-prefetch-git
       nix-output-monitor
-      flake-checker
-      snowfallorg.drift
     ];
 
     nix =

@@ -35,35 +35,16 @@
     # snowfall-lib.url = "path:/home/short/work/@snowfallorg/lib";
     snowfall-lib.inputs.nixpkgs.follows = "nixpkgs";
 
-    # Avalanche
-    avalanche.url = "github:snowfallorg/avalanche";
-    # avalanche.url = "path:/home/short/work/@snowfallorg/avalanche";
-    avalanche.inputs.nixpkgs.follows = "unstable";
-
 
     # Snowfall Flake
     flake.url = "github:snowfallorg/flake";
     flake.inputs.nixpkgs.follows = "unstable";
 
-    # Snowfall Thaw
-    thaw.url = "github:snowfallorg/thaw";
-    thaw.inputs.nixpkgs.follows = "nixpkgs";
-
-    # Snowfall Drift
-    drift.url = "github:snowfallorg/drift";
-    drift.inputs.nixpkgs.follows = "nixpkgs";
 
     # Comma
     comma.url = "github:nix-community/comma";
     comma.inputs.nixpkgs.follows = "unstable";
 
-    # System Deployment
-    deploy-rs.url = "github:serokell/deploy-rs";
-    deploy-rs.inputs.nixpkgs.follows = "nixpkgs";
-
-    # Run unpatched dynamically compiled binaries
-    #nix-ld.url = "github:Mic92/nix-ld";
-    #nix-ld.inputs.nixpkgs.follows = "unstable";
 
     # Tmux
     tmux.url = "github:jakehamilton/tmux";
@@ -85,29 +66,6 @@
       inputs.nixpkgs-stable.follows = "nixpkgs";
     };
 
-    # Vault Integration
-    vault-service = {
-      url = "github:DeterminateSystems/nixos-vault-service";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
-    # Flake Hygiene
-    flake-checker = {
-      url = "github:DeterminateSystems/flake-checker";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
-    # Backup management
-    icehouse = {
-      url = "github:snowfallorg/icehouse?ref=v1.1.1";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
-    # Yubikey Guide
-    yubikey-guide = {
-      url = "github:drduh/YubiKey-Guide";
-      flake = false;
-    };
 
     # GPG default configuration
     gpg-base-conf = {
@@ -115,15 +73,6 @@
       flake = false;
     };
 
-    bibata-cursors = {
-      url = "github:suchipi/Bibata_Cursor";
-      flake = false;
-    };
-
-    rf = {
-      url = "github:jakehamilton/rf";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
 
     # sops-nix
     sops-nix = {
@@ -158,25 +107,14 @@
       };
 
       overlays = with inputs; [
-        avalanche.overlays.default
         tmux.overlay
         flake.overlays.default
-        thaw.overlays.default
-        drift.overlays.default
-        icehouse.overlays.default
-        rf.overlays.default
         lix-module.overlays.default
       ];
 
       systems.modules.nixos = with inputs; [
-        avalanche.nixosModules."avalanche/desktop"
         home-manager.nixosModules.home-manager
-        #nix-ld.nixosModules.nix-ld
-        vault-service.nixosModules.nixos-vault-service
         sops-nix.nixosModules.sops
-        # TODO: Replace plusultra.services.attic now that vault-agent
-        # exists and can force override environment files.
-        # attic.nixosModules.atticd
       ];
 
       systems.hosts.wsl.modules = with inputs; [
