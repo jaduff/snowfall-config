@@ -598,7 +598,8 @@
         "snowfall-lib": "snowfall-lib_2",
         "sops-nix": "sops-nix",
         "tmux": "tmux",
-        "unstable": "unstable"
+        "unstable": "unstable",
+        "veracrypt": "veracrypt"
       }
     },
     "snowfall": {
@@ -791,6 +792,22 @@
       "original": {
         "owner": "numtide",
         "repo": "flake-utils",
+        "type": "github"
+      }
+    },
+    "veracrypt": {
+      "locked": {
+        "lastModified": 1737948606,
+        "narHash": "sha256-chDbRJoT5j7JOgjTZeSiqeqI4xnUEIVs0yT78VMlyu4=",
+        "owner": "NixOs",
+        "repo": "nixpkgs",
+        "rev": "4054e4f776b62f59acafce83d6c30a839f913fc7",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOs",
+        "repo": "nixpkgs",
+        "rev": "4054e4f776b62f59acafce83d6c30a839f913fc7",
         "type": "github"
       }
     }
