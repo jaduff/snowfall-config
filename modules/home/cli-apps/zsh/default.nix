@@ -6,6 +6,7 @@
   ...
 }:
 let
+  
   inherit (lib) mkEnableOption mkIf;
 
   cfg = config.${namespace}.cli-apps.zsh;
@@ -55,7 +56,7 @@ in
 
           ${tty-color-support}
 
-          ${pkgs.toilet}/bin/toilet -f future "Plus Ultra" --gay
+          ${pkgs.toilet}/bin/toilet -f ascii12 "ORCHID" --gay
 
           # Improved vim bindings.
           source ${pkgs.zsh-vi-mode}/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
