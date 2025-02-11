@@ -61,8 +61,8 @@ virtualisation.libvirtd.enable = true;
     };
 
     security = {
-      doas = enabled;
-      sudo = disabled;
+      doas = disabled;
+      sudo = enabled;
     };
     services = {
       work-printers = enabled;
