@@ -62,6 +62,7 @@ virtualisation.libvirtd.enable = true;
       #local-ai = enabled;
     };
     apps = {
+	veracrypt = enabled;
       #rpcs3 = enabled;
       #ubports-installer = enabled;
       #steamtinkerlaunch = enabled;
