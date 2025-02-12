@@ -76,6 +76,7 @@ virtualisation.libvirtd.enable = true;
       workstation = enabled;
     };
     system = {
+      power-management = enabled;
       fonts = enabled;
       locale = enabled;
       time = enabled;
