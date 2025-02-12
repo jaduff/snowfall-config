@@ -20,6 +20,7 @@ in {
   boot.initrd.kernelModules = [ "dm-snapshot" ];
   boot.kernelModules = [ "kvm-amd" "dm-crypt" "mt7921e" ];
   boot.extraModulePackages = [ ];
+  boot.kernelPackages = pkgs.linuxPackages_latest;
 
   boot.initrd.luks.devices.cryptroot.device = "/dev/disk/by-uuid/96009f40-a467-492a-9d14-2d767f1859fb";
 
