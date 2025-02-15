@@ -73,6 +73,7 @@ in
       gnome.gnome-control-center
       ags
       libdbusmenu-gtk3
+      wofi
     ];
 
     environment.sessionVariables.WLR_NO_HARDWARE_CURSORS = "1";
@@ -118,29 +119,29 @@ in
       };
 
       home = {
-        # configFile."hypr/hyprpaper.conf".text = ''
-        #   preload = ${builtins.toString cfg.wallpaper}
-        #   splash = false
+         configFile."hypr/hyprpaper.conf".text = ''
+           preload = ${builtins.toString cfg.wallpaper}
+           splash = false
 
-        #   wallpaper = , ${builtins.toString cfg.wallpaper}
-        # '';
+           wallpaper = , ${builtins.toString cfg.wallpaper}
+         '';
 
         extraOptions = {
-          # systemd.user.services.hyprpaper = {
-          #   Unit = {
-          #     Description = "Hyprland wallpaper daemon";
-          #     PartOf = ["graphical-session.target"];
-          #   };
+           systemd.user.services.hyprpaper = {
+             Unit = {
+               Description = "Hyprland wallpaper daemon";
+               PartOf = ["graphical-session.target"];
+             };
 
-          #   Service = {
-          #     ExecStart = lib.getExe pkgs.hyprpaper;
-          #     Restart = "on-failure";
-          #   };
+             Service = {
+               ExecStart = lib.getExe pkgs.hyprpaper;
+               Restart = "on-failure";
+             };
 
-          #   Install = {
-          #     WantedBy = ["graphical-session.target"];
-          #   };
-          # };
+             Install = {
+               WantedBy = ["graphical-session.target"];
+             };
+           };
 
           wayland.windowManager.hyprland = {
             enable = true;
@@ -149,6 +150,7 @@ in
               {
                  "$mod" = "SUPER";
                  "$terminal" = "foot";
+                 "$menu" = "wofi --show drun";
 
                 # monitor = [
                 #   # Default monitor fallback
@@ -196,6 +198,7 @@ in
                   workspace_swipe = true;
                   workspace_swipe_distance = 100;
                 };
+
 
                 bind = [
                 #   # Hyprland controls
@@ -270,6 +273,7 @@ in
 
                 #   # Programs
                    "$mod, Return, exec, $terminal"
+		   "$mod, space, exec, $menu"
                  ];
 
                 # bindm = [
@@ -292,13 +296,18 @@ in
 
                 windowrule = [ ];
 
-                layerrule = [ "noanim, ^avalanche-" ];
+                layerrule = [
+		  "noanim, ^avalanche-"
+		  "noanim, wofi"
+		  ];
 
                 # Programs to run on startup
                 exec-once =
                   [
                     # "dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP"
                     # "systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP"
+		    "killall -q .waybar-wrapped;sleep .5 && waybar"
+		    "killall -q wofi;sleep .5 && wofi"
                   ]
                   ++ optional config.${namespace}.desktop.addons.gtk.enable
                     "${cfg.package}/bin/hyprctl setcursor \"${config.${namespace}.desktop.addons.gtk.cursor.name}\" 16";
