@@ -61,7 +61,7 @@ virtualisation.libvirtd.enable = true;
     services = {
       #local-ai = enabled;
     };
-    desktop = { hyprland = enabled; };
+    desktop = {  };
     apps = {
 	veracrypt = enabled;
       #rpcs3 = enabled;
