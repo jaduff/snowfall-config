@@ -53,7 +53,7 @@ virtualisation.libvirtd.enable = true;
 #  };
 
   plusultra = {
-    desktop = { hyprland = enabled; };
+    desktop = { };
     apps = {
       #rpcs3 = enabled;
       #ubports-installer = enabled;
