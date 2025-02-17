@@ -19,7 +19,7 @@ in
   config = mkIf cfg.enable {
     plusultra = {
       desktop = {
-        gnome = enabled;
+        kde = enabled;
 
         addons = {
           wallpapers = enabled;
