@@ -13,24 +13,7 @@ let
   gdmHome = config.users.users.gdm.home;
 
   defaultExtensions = with pkgs.gnomeExtensions; [
-    appindicator
-    dash-to-dock
-    gsconnect
-    gtile
-    just-perfection
-    logo-menu
-    no-overview
-    space-bar
-    top-bar-organizer
-    wireless-hid
 
-    # NOTE: These extensions are currently unsupported. They may also
-    # no longer be required.
-
-    # audio-output-switcher
-    # big-avatar
-    # clear-top-bar
-    # emoji-selector
   ];
 
   default-attrs = mapAttrs (key: mkDefault);
