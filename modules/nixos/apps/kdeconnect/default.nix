@@ -14,5 +14,16 @@ in {
     enable = mkBoolOpt false "Whether or not to enable kdeconnect.";
   };
 
-  config = mkIf cfg.enable {environment.systemPackages = with pkgs; [kdePackages.kdeconnect-kde];};
+  config = mkIf cfg.enable {
+    environment.systemPackages = with pkgs; [kdePackages.kdeconnect-kde];
+    networking.firewall = {
+	  enable = true;
+	  allowedTCPPortRanges = [
+	    { from = 1714; to = 1764; }
+	  ];
+	  allowedUDPPortRanges = [
+	    { from = 1714; to = 1764; }
+	  ];
+	};
+    };
 }

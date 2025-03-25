@@ -27,6 +27,7 @@ in
       };
 
       apps = {
+	winetricks = enabled;
 	musescore = enabled;
         firefox = enabled;
         vlc = enabled;
@@ -35,6 +36,10 @@ in
         nextcloud-client = enabled;
         kdeconnect = enabled;
 	whatsapp-for-linux = enabled;
+      };
+
+      cli-apps = {
+	wine = enabled;
       };
 
       tools = {
