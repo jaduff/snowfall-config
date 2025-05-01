@@ -27,6 +27,7 @@ in
       };
 
       apps = {
+	xournalpp = enabled;
 	winetricks = enabled;
 	musescore = enabled;
         firefox = enabled;

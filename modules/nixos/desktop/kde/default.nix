@@ -46,6 +46,11 @@ in {
       enable = true;
     };
 
+    environment.systemPackages = with pkgs; [
+      maliit-keyboard
+      maliit-framework
+    ];
+
     # Open firewall for samba connections to work.
     networking.firewall.extraCommands = "iptables -t raw -A OUTPUT -p udp -m udp --dport 137 -j CT --helper netbios-ns";
   };
