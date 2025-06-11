@@ -21,6 +21,6 @@ in {
 	  acceleration = "cuda";
           port = 11434;
     };
-    networking.firewall.allowedTCPPorts = [ 8000 ];
+    networking.firewall.allowedTCPPorts = [ 4430 ];
 };
 }

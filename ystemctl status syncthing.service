@@ -1,0 +1,645 @@
+May 17 16:04:16 ignorant systemd[1]: Starting Syncthing service...
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit syncthing.service has begun execution[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit syncthing.service has begun execution.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 339.[0m
+May 17 16:04:16 ignorant m4lr4n8ahz4hmgrhwm2hcy8w5d740404-syncthing-copy-keys[2162]: install: cannot stat '/run/secrets/ignorant-certfile': No such file or directory
+May 17 16:04:16 ignorant m4lr4n8ahz4hmgrhwm2hcy8w5d740404-syncthing-copy-keys[2175]: install: cannot stat '/run/secrets/ignorant-keyfile': No such file or directory
+May 17 16:04:16 ignorant systemd[1]: [0;1;39m[0;1;31m[0;1;39msyncthing.service: Control process exited, code=exited, status=1/FAILURE[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit process exited[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mAn ExecStartPre= process belonging to unit syncthing.service has exited.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe process' exit code is 'exited' and its exit status is 1.[0m
+May 17 16:04:16 ignorant systemd[1]: [0;1;38:5:185m[0;1;39m[0;1;38:5:185msyncthing.service: Failed with result 'exit-code'.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit failed[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit syncthing.service has entered the 'failed' state with result 'exit-code'.[0m
+May 17 16:04:16 ignorant systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start Syncthing service.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit syncthing.service has failed[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit syncthing.service has finished with a failure.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 339 and the job result is failed.[0m
+May 17 16:04:17 ignorant systemd[1]: syncthing.service: Scheduled restart job, restart counter is at 1.
+[0;38;5;245m░░ [0m[0;32mSubject: Automatic restarting of a unit has been scheduled[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mAutomatic restarting of the unit syncthing.service has been scheduled, as the result for[0m
+[0;38;5;245m░░[0m [0;32mthe configured Restart= setting for the unit.[0m
+May 17 16:04:17 ignorant systemd[1]: Starting Syncthing service...
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit syncthing.service has begun execution[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit syncthing.service has begun execution.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 976.[0m
+May 17 16:04:17 ignorant m4lr4n8ahz4hmgrhwm2hcy8w5d740404-syncthing-copy-keys[2247]: install: cannot stat '/run/secrets/ignorant-certfile': No such file or directory
+May 17 16:04:17 ignorant m4lr4n8ahz4hmgrhwm2hcy8w5d740404-syncthing-copy-keys[2248]: install: cannot stat '/run/secrets/ignorant-keyfile': No such file or directory
+May 17 16:04:17 ignorant systemd[1]: [0;1;39m[0;1;31m[0;1;39msyncthing.service: Control process exited, code=exited, status=1/FAILURE[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit process exited[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mAn ExecStartPre= process belonging to unit syncthing.service has exited.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe process' exit code is 'exited' and its exit status is 1.[0m
+May 17 16:04:17 ignorant systemd[1]: [0;1;38:5:185m[0;1;39m[0;1;38:5:185msyncthing.service: Failed with result 'exit-code'.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit failed[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit syncthing.service has entered the 'failed' state with result 'exit-code'.[0m
+May 17 16:04:17 ignorant systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start Syncthing service.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit syncthing.service has failed[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit syncthing.service has finished with a failure.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 976 and the job result is failed.[0m
+May 17 16:04:17 ignorant systemd[1]: syncthing.service: Scheduled restart job, restart counter is at 2.
+[0;38;5;245m░░ [0m[0;32mSubject: Automatic restarting of a unit has been scheduled[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mAutomatic restarting of the unit syncthing.service has been scheduled, as the result for[0m
+[0;38;5;245m░░[0m [0;32mthe configured Restart= setting for the unit.[0m
+May 17 16:04:17 ignorant systemd[1]: Starting Syncthing service...
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit syncthing.service has begun execution[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit syncthing.service has begun execution.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 1081.[0m
+May 17 16:04:17 ignorant m4lr4n8ahz4hmgrhwm2hcy8w5d740404-syncthing-copy-keys[2268]: install: cannot stat '/run/secrets/ignorant-certfile': No such file or directory
+May 17 16:04:17 ignorant m4lr4n8ahz4hmgrhwm2hcy8w5d740404-syncthing-copy-keys[2269]: install: cannot stat '/run/secrets/ignorant-keyfile': No such file or directory
+May 17 16:04:17 ignorant systemd[1]: [0;1;39m[0;1;31m[0;1;39msyncthing.service: Control process exited, code=exited, status=1/FAILURE[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit process exited[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mAn ExecStartPre= process belonging to unit syncthing.service has exited.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe process' exit code is 'exited' and its exit status is 1.[0m
+May 17 16:04:17 ignorant systemd[1]: [0;1;38:5:185m[0;1;39m[0;1;38:5:185msyncthing.service: Failed with result 'exit-code'.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit failed[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit syncthing.service has entered the 'failed' state with result 'exit-code'.[0m
+May 17 16:04:17 ignorant systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start Syncthing service.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit syncthing.service has failed[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit syncthing.service has finished with a failure.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 1081 and the job result is failed.[0m
+May 17 16:04:17 ignorant systemd[1]: syncthing.service: Scheduled restart job, restart counter is at 3.
+[0;38;5;245m░░ [0m[0;32mSubject: Automatic restarting of a unit has been scheduled[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mAutomatic restarting of the unit syncthing.service has been scheduled, as the result for[0m
+[0;38;5;245m░░[0m [0;32mthe configured Restart= setting for the unit.[0m
+May 17 16:04:17 ignorant systemd[1]: Starting Syncthing service...
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit syncthing.service has begun execution[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit syncthing.service has begun execution.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 1510.[0m
+May 17 16:04:17 ignorant m4lr4n8ahz4hmgrhwm2hcy8w5d740404-syncthing-copy-keys[2293]: install: cannot stat '/run/secrets/ignorant-certfile': No such file or directory
+May 17 16:04:17 ignorant m4lr4n8ahz4hmgrhwm2hcy8w5d740404-syncthing-copy-keys[2294]: install: cannot stat '/run/secrets/ignorant-keyfile': No such file or directory
+May 17 16:04:17 ignorant systemd[1]: [0;1;39m[0;1;31m[0;1;39msyncthing.service: Control process exited, code=exited, status=1/FAILURE[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit process exited[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mAn ExecStartPre= process belonging to unit syncthing.service has exited.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe process' exit code is 'exited' and its exit status is 1.[0m
+May 17 16:04:17 ignorant systemd[1]: [0;1;38:5:185m[0;1;39m[0;1;38:5:185msyncthing.service: Failed with result 'exit-code'.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit failed[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit syncthing.service has entered the 'failed' state with result 'exit-code'.[0m
+May 17 16:04:17 ignorant systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start Syncthing service.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit syncthing.service has failed[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit syncthing.service has finished with a failure.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 1510 and the job result is failed.[0m
+May 17 16:04:17 ignorant systemd[1]: syncthing.service: Scheduled restart job, restart counter is at 4.
+[0;38;5;245m░░ [0m[0;32mSubject: Automatic restarting of a unit has been scheduled[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mAutomatic restarting of the unit syncthing.service has been scheduled, as the result for[0m
+[0;38;5;245m░░[0m [0;32mthe configured Restart= setting for the unit.[0m
+May 17 16:04:17 ignorant systemd[1]: Starting Syncthing service...
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit syncthing.service has begun execution[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit syncthing.service has begun execution.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 1615.[0m
+May 17 16:04:17 ignorant m4lr4n8ahz4hmgrhwm2hcy8w5d740404-syncthing-copy-keys[2333]: install: cannot stat '/run/secrets/ignorant-certfile': No such file or directory
+May 17 16:04:17 ignorant m4lr4n8ahz4hmgrhwm2hcy8w5d740404-syncthing-copy-keys[2334]: install: cannot stat '/run/secrets/ignorant-keyfile': No such file or directory
+May 17 16:04:17 ignorant systemd[1]: [0;1;39m[0;1;31m[0;1;39msyncthing.service: Control process exited, code=exited, status=1/FAILURE[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit process exited[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mAn ExecStartPre= process belonging to unit syncthing.service has exited.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe process' exit code is 'exited' and its exit status is 1.[0m
+May 17 16:04:17 ignorant systemd[1]: [0;1;38:5:185m[0;1;39m[0;1;38:5:185msyncthing.service: Failed with result 'exit-code'.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit failed[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit syncthing.service has entered the 'failed' state with result 'exit-code'.[0m
+May 17 16:04:17 ignorant systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start Syncthing service.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit syncthing.service has failed[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit syncthing.service has finished with a failure.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 1615 and the job result is failed.[0m
+May 17 16:04:18 ignorant systemd[1]: syncthing.service: Scheduled restart job, restart counter is at 5.
+[0;38;5;245m░░ [0m[0;32mSubject: Automatic restarting of a unit has been scheduled[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mAutomatic restarting of the unit syncthing.service has been scheduled, as the result for[0m
+[0;38;5;245m░░[0m [0;32mthe configured Restart= setting for the unit.[0m
+May 17 16:04:18 ignorant systemd[1]: [0;1;38:5:185m[0;1;39m[0;1;38:5:185msyncthing.service: Start request repeated too quickly.[0m
+May 17 16:04:18 ignorant systemd[1]: [0;1;38:5:185m[0;1;39m[0;1;38:5:185msyncthing.service: Failed with result 'exit-code'.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit failed[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit syncthing.service has entered the 'failed' state with result 'exit-code'.[0m
+May 17 16:04:18 ignorant systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start Syncthing service.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit syncthing.service has failed[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit syncthing.service has finished with a failure.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 1720 and the job result is failed.[0m
+May 17 18:05:31 ignorant systemd[1]: Starting Syncthing service...
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit syncthing.service has begun execution[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit syncthing.service has begun execution.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 3876.[0m
+May 17 18:05:31 ignorant m4lr4n8ahz4hmgrhwm2hcy8w5d740404-syncthing-copy-keys[15459]: install: cannot stat '/run/secrets/ignorant-certfile': No such file or directory
+May 17 18:05:31 ignorant m4lr4n8ahz4hmgrhwm2hcy8w5d740404-syncthing-copy-keys[15460]: install: cannot stat '/run/secrets/ignorant-keyfile': No such file or directory
+May 17 18:05:31 ignorant systemd[1]: [0;1;39m[0;1;31m[0;1;39msyncthing.service: Control process exited, code=exited, status=1/FAILURE[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit process exited[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mAn ExecStartPre= process belonging to unit syncthing.service has exited.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe process' exit code is 'exited' and its exit status is 1.[0m
+May 17 18:05:31 ignorant systemd[1]: [0;1;38:5:185m[0;1;39m[0;1;38:5:185msyncthing.service: Failed with result 'exit-code'.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit failed[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit syncthing.service has entered the 'failed' state with result 'exit-code'.[0m
+May 17 18:05:31 ignorant systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start Syncthing service.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit syncthing.service has failed[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit syncthing.service has finished with a failure.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 3876 and the job result is failed.[0m
+May 17 18:05:31 ignorant systemd[1]: syncthing.service: Scheduled restart job, restart counter is at 1.
+[0;38;5;245m░░ [0m[0;32mSubject: Automatic restarting of a unit has been scheduled[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mAutomatic restarting of the unit syncthing.service has been scheduled, as the result for[0m
+[0;38;5;245m░░[0m [0;32mthe configured Restart= setting for the unit.[0m
+May 17 18:05:31 ignorant systemd[1]: Starting Syncthing service...
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit syncthing.service has begun execution[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit syncthing.service has begun execution.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 3981.[0m
+May 17 18:05:31 ignorant m4lr4n8ahz4hmgrhwm2hcy8w5d740404-syncthing-copy-keys[15496]: install: cannot stat '/run/secrets/ignorant-certfile': No such file or directory
+May 17 18:05:31 ignorant m4lr4n8ahz4hmgrhwm2hcy8w5d740404-syncthing-copy-keys[15497]: install: cannot stat '/run/secrets/ignorant-keyfile': No such file or directory
+May 17 18:05:31 ignorant systemd[1]: [0;1;39m[0;1;31m[0;1;39msyncthing.service: Control process exited, code=exited, status=1/FAILURE[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit process exited[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mAn ExecStartPre= process belonging to unit syncthing.service has exited.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe process' exit code is 'exited' and its exit status is 1.[0m
+May 17 18:05:31 ignorant systemd[1]: [0;1;38:5:185m[0;1;39m[0;1;38:5:185msyncthing.service: Failed with result 'exit-code'.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit failed[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit syncthing.service has entered the 'failed' state with result 'exit-code'.[0m
+May 17 18:05:31 ignorant systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start Syncthing service.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit syncthing.service has failed[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit syncthing.service has finished with a failure.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 3981 and the job result is failed.[0m
+May 17 18:05:31 ignorant systemd[1]: syncthing.service: Scheduled restart job, restart counter is at 2.
+[0;38;5;245m░░ [0m[0;32mSubject: Automatic restarting of a unit has been scheduled[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mAutomatic restarting of the unit syncthing.service has been scheduled, as the result for[0m
+[0;38;5;245m░░[0m [0;32mthe configured Restart= setting for the unit.[0m
+May 17 18:05:31 ignorant systemd[1]: Starting Syncthing service...
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit syncthing.service has begun execution[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit syncthing.service has begun execution.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 4086.[0m
+May 17 18:05:31 ignorant m4lr4n8ahz4hmgrhwm2hcy8w5d740404-syncthing-copy-keys[15504]: install: cannot stat '/run/secrets/ignorant-certfile': No such file or directory
+May 17 18:05:31 ignorant m4lr4n8ahz4hmgrhwm2hcy8w5d740404-syncthing-copy-keys[15505]: install: cannot stat '/run/secrets/ignorant-keyfile': No such file or directory
+May 17 18:05:31 ignorant systemd[1]: [0;1;39m[0;1;31m[0;1;39msyncthing.service: Control process exited, code=exited, status=1/FAILURE[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit process exited[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mAn ExecStartPre= process belonging to unit syncthing.service has exited.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe process' exit code is 'exited' and its exit status is 1.[0m
+May 17 18:05:31 ignorant systemd[1]: [0;1;38:5:185m[0;1;39m[0;1;38:5:185msyncthing.service: Failed with result 'exit-code'.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit failed[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit syncthing.service has entered the 'failed' state with result 'exit-code'.[0m
+May 17 18:05:31 ignorant systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start Syncthing service.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit syncthing.service has failed[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit syncthing.service has finished with a failure.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 4086 and the job result is failed.[0m
+May 17 18:05:32 ignorant systemd[1]: syncthing.service: Scheduled restart job, restart counter is at 3.
+[0;38;5;245m░░ [0m[0;32mSubject: Automatic restarting of a unit has been scheduled[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mAutomatic restarting of the unit syncthing.service has been scheduled, as the result for[0m
+[0;38;5;245m░░[0m [0;32mthe configured Restart= setting for the unit.[0m
+May 17 18:05:32 ignorant systemd[1]: Starting Syncthing service...
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit syncthing.service has begun execution[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit syncthing.service has begun execution.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 4191.[0m
+May 17 18:05:32 ignorant m4lr4n8ahz4hmgrhwm2hcy8w5d740404-syncthing-copy-keys[15512]: install: cannot stat '/run/secrets/ignorant-certfile': No such file or directory
+May 17 18:05:32 ignorant m4lr4n8ahz4hmgrhwm2hcy8w5d740404-syncthing-copy-keys[15513]: install: cannot stat '/run/secrets/ignorant-keyfile': No such file or directory
+May 17 18:05:32 ignorant systemd[1]: [0;1;39m[0;1;31m[0;1;39msyncthing.service: Control process exited, code=exited, status=1/FAILURE[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit process exited[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mAn ExecStartPre= process belonging to unit syncthing.service has exited.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe process' exit code is 'exited' and its exit status is 1.[0m
+May 17 18:05:32 ignorant systemd[1]: [0;1;38:5:185m[0;1;39m[0;1;38:5:185msyncthing.service: Failed with result 'exit-code'.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit failed[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit syncthing.service has entered the 'failed' state with result 'exit-code'.[0m
+May 17 18:05:32 ignorant systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start Syncthing service.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit syncthing.service has failed[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit syncthing.service has finished with a failure.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 4191 and the job result is failed.[0m
+May 17 18:05:32 ignorant systemd[1]: syncthing.service: Scheduled restart job, restart counter is at 4.
+[0;38;5;245m░░ [0m[0;32mSubject: Automatic restarting of a unit has been scheduled[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mAutomatic restarting of the unit syncthing.service has been scheduled, as the result for[0m
+[0;38;5;245m░░[0m [0;32mthe configured Restart= setting for the unit.[0m
+May 17 18:05:32 ignorant systemd[1]: Starting Syncthing service...
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit syncthing.service has begun execution[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit syncthing.service has begun execution.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 4296.[0m
+May 17 18:05:32 ignorant m4lr4n8ahz4hmgrhwm2hcy8w5d740404-syncthing-copy-keys[15519]: install: cannot stat '/run/secrets/ignorant-certfile': No such file or directory
+May 17 18:05:32 ignorant m4lr4n8ahz4hmgrhwm2hcy8w5d740404-syncthing-copy-keys[15520]: install: cannot stat '/run/secrets/ignorant-keyfile': No such file or directory
+May 17 18:05:32 ignorant systemd[1]: [0;1;39m[0;1;31m[0;1;39msyncthing.service: Control process exited, code=exited, status=1/FAILURE[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit process exited[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mAn ExecStartPre= process belonging to unit syncthing.service has exited.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe process' exit code is 'exited' and its exit status is 1.[0m
+May 17 18:05:32 ignorant systemd[1]: [0;1;38:5:185m[0;1;39m[0;1;38:5:185msyncthing.service: Failed with result 'exit-code'.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit failed[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit syncthing.service has entered the 'failed' state with result 'exit-code'.[0m
+May 17 18:05:32 ignorant systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start Syncthing service.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit syncthing.service has failed[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit syncthing.service has finished with a failure.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 4296 and the job result is failed.[0m
+May 17 18:05:32 ignorant systemd[1]: syncthing.service: Scheduled restart job, restart counter is at 5.
+[0;38;5;245m░░ [0m[0;32mSubject: Automatic restarting of a unit has been scheduled[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mAutomatic restarting of the unit syncthing.service has been scheduled, as the result for[0m
+[0;38;5;245m░░[0m [0;32mthe configured Restart= setting for the unit.[0m
+May 17 18:05:32 ignorant systemd[1]: [0;1;38:5:185m[0;1;39m[0;1;38:5:185msyncthing.service: Start request repeated too quickly.[0m
+May 17 18:05:32 ignorant systemd[1]: [0;1;38:5:185m[0;1;39m[0;1;38:5:185msyncthing.service: Failed with result 'exit-code'.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit failed[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit syncthing.service has entered the 'failed' state with result 'exit-code'.[0m
+May 17 18:05:32 ignorant systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start Syncthing service.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit syncthing.service has failed[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit syncthing.service has finished with a failure.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 4401 and the job result is failed.[0m
+May 17 18:05:50 ignorant systemd[1]: Starting Syncthing service...
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit syncthing.service has begun execution[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit syncthing.service has begun execution.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 4506.[0m
+May 17 18:05:50 ignorant m4lr4n8ahz4hmgrhwm2hcy8w5d740404-syncthing-copy-keys[15570]: install: cannot stat '/run/secrets/ignorant-certfile': No such file or directory
+May 17 18:05:50 ignorant m4lr4n8ahz4hmgrhwm2hcy8w5d740404-syncthing-copy-keys[15571]: install: cannot stat '/run/secrets/ignorant-keyfile': No such file or directory
+May 17 18:05:50 ignorant systemd[1]: [0;1;39m[0;1;31m[0;1;39msyncthing.service: Control process exited, code=exited, status=1/FAILURE[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit process exited[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mAn ExecStartPre= process belonging to unit syncthing.service has exited.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe process' exit code is 'exited' and its exit status is 1.[0m
+May 17 18:05:50 ignorant systemd[1]: [0;1;38:5:185m[0;1;39m[0;1;38:5:185msyncthing.service: Failed with result 'exit-code'.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit failed[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit syncthing.service has entered the 'failed' state with result 'exit-code'.[0m
+May 17 18:05:50 ignorant systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start Syncthing service.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit syncthing.service has failed[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit syncthing.service has finished with a failure.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 4506 and the job result is failed.[0m
+May 17 18:05:51 ignorant systemd[1]: syncthing.service: Scheduled restart job, restart counter is at 1.
+[0;38;5;245m░░ [0m[0;32mSubject: Automatic restarting of a unit has been scheduled[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mAutomatic restarting of the unit syncthing.service has been scheduled, as the result for[0m
+[0;38;5;245m░░[0m [0;32mthe configured Restart= setting for the unit.[0m
+May 17 18:05:51 ignorant systemd[1]: Starting Syncthing service...
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit syncthing.service has begun execution[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit syncthing.service has begun execution.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 4611.[0m
+May 17 18:05:51 ignorant m4lr4n8ahz4hmgrhwm2hcy8w5d740404-syncthing-copy-keys[15607]: install: cannot stat '/run/secrets/ignorant-certfile': No such file or directory
+May 17 18:05:51 ignorant m4lr4n8ahz4hmgrhwm2hcy8w5d740404-syncthing-copy-keys[15608]: install: cannot stat '/run/secrets/ignorant-keyfile': No such file or directory
+May 17 18:05:51 ignorant systemd[1]: [0;1;39m[0;1;31m[0;1;39msyncthing.service: Control process exited, code=exited, status=1/FAILURE[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit process exited[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mAn ExecStartPre= process belonging to unit syncthing.service has exited.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe process' exit code is 'exited' and its exit status is 1.[0m
+May 17 18:05:51 ignorant systemd[1]: [0;1;38:5:185m[0;1;39m[0;1;38:5:185msyncthing.service: Failed with result 'exit-code'.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit failed[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit syncthing.service has entered the 'failed' state with result 'exit-code'.[0m
+May 17 18:05:51 ignorant systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start Syncthing service.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit syncthing.service has failed[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit syncthing.service has finished with a failure.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 4611 and the job result is failed.[0m
+May 17 18:05:51 ignorant systemd[1]: syncthing.service: Scheduled restart job, restart counter is at 2.
+[0;38;5;245m░░ [0m[0;32mSubject: Automatic restarting of a unit has been scheduled[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mAutomatic restarting of the unit syncthing.service has been scheduled, as the result for[0m
+[0;38;5;245m░░[0m [0;32mthe configured Restart= setting for the unit.[0m
+May 17 18:05:51 ignorant systemd[1]: Starting Syncthing service...
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit syncthing.service has begun execution[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit syncthing.service has begun execution.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 4716.[0m
+May 17 18:05:51 ignorant m4lr4n8ahz4hmgrhwm2hcy8w5d740404-syncthing-copy-keys[15616]: install: cannot stat '/run/secrets/ignorant-certfile': No such file or directory
+May 17 18:05:51 ignorant m4lr4n8ahz4hmgrhwm2hcy8w5d740404-syncthing-copy-keys[15617]: install: cannot stat '/run/secrets/ignorant-keyfile': No such file or directory
+May 17 18:05:51 ignorant systemd[1]: [0;1;39m[0;1;31m[0;1;39msyncthing.service: Control process exited, code=exited, status=1/FAILURE[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit process exited[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mAn ExecStartPre= process belonging to unit syncthing.service has exited.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe process' exit code is 'exited' and its exit status is 1.[0m
+May 17 18:05:51 ignorant systemd[1]: [0;1;38:5:185m[0;1;39m[0;1;38:5:185msyncthing.service: Failed with result 'exit-code'.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit failed[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit syncthing.service has entered the 'failed' state with result 'exit-code'.[0m
+May 17 18:05:51 ignorant systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start Syncthing service.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit syncthing.service has failed[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit syncthing.service has finished with a failure.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 4716 and the job result is failed.[0m
+May 17 18:05:51 ignorant systemd[1]: syncthing.service: Scheduled restart job, restart counter is at 3.
+[0;38;5;245m░░ [0m[0;32mSubject: Automatic restarting of a unit has been scheduled[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mAutomatic restarting of the unit syncthing.service has been scheduled, as the result for[0m
+[0;38;5;245m░░[0m [0;32mthe configured Restart= setting for the unit.[0m
+May 17 18:05:51 ignorant systemd[1]: Starting Syncthing service...
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit syncthing.service has begun execution[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit syncthing.service has begun execution.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 4821.[0m
+May 17 18:05:51 ignorant m4lr4n8ahz4hmgrhwm2hcy8w5d740404-syncthing-copy-keys[15623]: install: cannot stat '/run/secrets/ignorant-certfile': No such file or directory
+May 17 18:05:51 ignorant m4lr4n8ahz4hmgrhwm2hcy8w5d740404-syncthing-copy-keys[15624]: install: cannot stat '/run/secrets/ignorant-keyfile': No such file or directory
+May 17 18:05:51 ignorant systemd[1]: [0;1;39m[0;1;31m[0;1;39msyncthing.service: Control process exited, code=exited, status=1/FAILURE[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit process exited[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mAn ExecStartPre= process belonging to unit syncthing.service has exited.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe process' exit code is 'exited' and its exit status is 1.[0m
+May 17 18:05:51 ignorant systemd[1]: [0;1;38:5:185m[0;1;39m[0;1;38:5:185msyncthing.service: Failed with result 'exit-code'.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit failed[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit syncthing.service has entered the 'failed' state with result 'exit-code'.[0m
+May 17 18:05:51 ignorant systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start Syncthing service.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit syncthing.service has failed[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit syncthing.service has finished with a failure.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 4821 and the job result is failed.[0m
+May 17 18:05:51 ignorant systemd[1]: syncthing.service: Scheduled restart job, restart counter is at 4.
+[0;38;5;245m░░ [0m[0;32mSubject: Automatic restarting of a unit has been scheduled[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mAutomatic restarting of the unit syncthing.service has been scheduled, as the result for[0m
+[0;38;5;245m░░[0m [0;32mthe configured Restart= setting for the unit.[0m
+May 17 18:05:51 ignorant systemd[1]: Starting Syncthing service...
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit syncthing.service has begun execution[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit syncthing.service has begun execution.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 4926.[0m
+May 17 18:05:51 ignorant m4lr4n8ahz4hmgrhwm2hcy8w5d740404-syncthing-copy-keys[15631]: install: cannot stat '/run/secrets/ignorant-certfile': No such file or directory
+May 17 18:05:51 ignorant m4lr4n8ahz4hmgrhwm2hcy8w5d740404-syncthing-copy-keys[15632]: install: cannot stat '/run/secrets/ignorant-keyfile': No such file or directory
+May 17 18:05:51 ignorant systemd[1]: [0;1;39m[0;1;31m[0;1;39msyncthing.service: Control process exited, code=exited, status=1/FAILURE[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit process exited[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mAn ExecStartPre= process belonging to unit syncthing.service has exited.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe process' exit code is 'exited' and its exit status is 1.[0m
+May 17 18:05:51 ignorant systemd[1]: [0;1;38:5:185m[0;1;39m[0;1;38:5:185msyncthing.service: Failed with result 'exit-code'.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit failed[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit syncthing.service has entered the 'failed' state with result 'exit-code'.[0m
+May 17 18:05:51 ignorant systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start Syncthing service.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit syncthing.service has failed[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit syncthing.service has finished with a failure.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 4926 and the job result is failed.[0m
+May 17 18:05:52 ignorant systemd[1]: syncthing.service: Scheduled restart job, restart counter is at 5.
+[0;38;5;245m░░ [0m[0;32mSubject: Automatic restarting of a unit has been scheduled[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mAutomatic restarting of the unit syncthing.service has been scheduled, as the result for[0m
+[0;38;5;245m░░[0m [0;32mthe configured Restart= setting for the unit.[0m
+May 17 18:05:52 ignorant systemd[1]: [0;1;38:5:185m[0;1;39m[0;1;38:5:185msyncthing.service: Start request repeated too quickly.[0m
+May 17 18:05:52 ignorant systemd[1]: [0;1;38:5:185m[0;1;39m[0;1;38:5:185msyncthing.service: Failed with result 'exit-code'.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit failed[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit syncthing.service has entered the 'failed' state with result 'exit-code'.[0m
+May 17 18:05:52 ignorant systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start Syncthing service.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit syncthing.service has failed[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit syncthing.service has finished with a failure.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 5031 and the job result is failed.[0m
+May 17 18:05:52 ignorant systemd[1]: [0;1;38:5:185m[0;1;39m[0;1;38:5:185msyncthing.service: Start request repeated too quickly.[0m
+May 17 18:05:52 ignorant systemd[1]: [0;1;38:5:185m[0;1;39m[0;1;38:5:185msyncthing.service: Failed with result 'exit-code'.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit failed[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit syncthing.service has entered the 'failed' state with result 'exit-code'.[0m
+May 17 18:05:52 ignorant systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start Syncthing service.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit syncthing.service has failed[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit syncthing.service has finished with a failure.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 5136 and the job result is failed.[0m
