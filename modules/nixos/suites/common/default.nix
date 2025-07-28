@@ -36,6 +36,7 @@ in {
         bottom = enabled;
         btop = enabled;
         borgbackup = enabled;
+	dig = enabled;
       };
 
       hardware = {
