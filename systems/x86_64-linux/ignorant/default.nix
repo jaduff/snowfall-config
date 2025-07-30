@@ -29,7 +29,7 @@ home-manager.backupFileExtension = "backup";
   boot.plymouth.theme = "breeze";
   environment.systemPackages = with pkgs; [
     plymouth
-    breeze-plymouth
+    kdePackages.breeze-plymouth
     #intel-gpu-tools
     dive
     podman-tui

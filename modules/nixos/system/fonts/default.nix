@@ -33,7 +33,7 @@ in
         noto-fonts-cjk-serif
         noto-fonts-emoji
         noto-fonts-emoji-blob-bin
-        (nerdfonts.override { fonts = [ "Hack" ]; })
+        nerd-fonts.hack
       ]
       ++ cfg.fonts;
   };

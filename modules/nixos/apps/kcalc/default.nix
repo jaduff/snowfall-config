@@ -14,5 +14,5 @@ in {
     enable = mkBoolOpt false "Whether or not to enable kcalc.";
   };
 
-  config = mkIf cfg.enable {environment.systemPackages = with pkgs; [kcalc];};
+  config = mkIf cfg.enable {environment.systemPackages = with pkgs; [kdePackages.kcalc];};
 }

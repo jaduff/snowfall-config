@@ -47,7 +47,7 @@ in
 
         autosuggestion.enable = true;
 
-        initExtra = ''
+        initContent= ''
           # Fix an issue with tmux.
           export KEYTIMEOUT=1
 
