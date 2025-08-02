@@ -16,3 +16,8 @@ creation_rules:
           - *jaduff
           - *ignorant
           - *carnifex
+  - path_regex: modules/nixos/services/wireguard/[^/]+\.(yaml|json|env|ini|sops)$
+    key_groups:
+      - age:
+          - *jaduff
+          - *ignorant
