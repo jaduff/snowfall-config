@@ -15,6 +15,7 @@ let
     lutris = enabled;
     winetricks = enabled;
     protontricks = enabled;
+    vintagestory = enabled;
   };
   cli-apps = {
     wine = enabled;
