@@ -14,5 +14,5 @@ in {
     enable = mkBoolOpt false "Whether or not to enable vintagestory.";
   };
 
-  config = mkIf cfg.enable {environment.systemPackages = with pkgs; [unstable.vintagestory];};
+  config = mkIf cfg.enable {environment.systemPackages = with pkgs; [vintagestory];};
 }

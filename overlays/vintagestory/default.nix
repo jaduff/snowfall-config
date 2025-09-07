@@ -17,7 +17,7 @@ inputs,
 final: prev: {
     # For example, to pull a package from unstable NixPkgs make sure you have the
     # input `unstable = "github:nixos/nixpkgs/nixos-unstable"` in your flake.
-    inherit (channels.vintagestory) vintagestory;
+    inherit (channels.unstable) vintagestory;
 
     #my-package = inputs.my-input.packages.${prev.system}.my-package;
 }
