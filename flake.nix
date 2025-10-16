@@ -46,7 +46,7 @@
     comma.inputs.nixpkgs.follows = "unstable";
 
     # Veracrypt
-    veracrypt.url = "github:NixOs/nixpkgs/4054e4f776b62f59acafce83d6c30a839f913fc7";
+    #veracrypt.url = "github:NixOs/nixpkgs/4054e4f776b62f59acafce83d6c30a839f913fc7";
     #veracrypt.inputs.nixpkgs.follows = "unstable";
 
     # Tmux
