@@ -26,6 +26,9 @@ in
         neovim = enabled;
         tmux = enabled;
       };
+      virtualisation = {
+	docker = enabled;
+      };
     };
   };
 }
