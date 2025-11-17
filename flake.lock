@@ -385,6 +385,22 @@
         "type": "github"
       }
     },
+    "lix": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1763218479,
+        "narHash": "sha256-fqP9QHlJ5JEcEhZ4wxaLbCxcpnIC15kxZSnOo/D1Nr4=",
+        "ref": "refs/heads/main",
+        "rev": "243836ed0a0b963eebd033d109e6cb817d67fde4",
+        "revCount": 18522,
+        "type": "git",
+        "url": "https://git.lix.systems/lix-project/lix"
+      },
+      "original": {
+        "type": "git",
+        "url": "https://git.lix.systems/lix-project/lix"
+      }
+    },
     "naersk": {
       "inputs": {
         "fenix": "fenix",
@@ -538,6 +554,7 @@
         "flake": "flake",
         "gpg-base-conf": "gpg-base-conf",
         "home-manager": "home-manager",
+        "lix": "lix",
         "nixos-generators": "nixos-generators",
         "nixos-hardware": "nixos-hardware",
         "nixos-wsl": "nixos-wsl",

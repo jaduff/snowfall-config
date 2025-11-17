@@ -12,16 +12,16 @@
     home-manager.url = "github:nix-community/home-manager/release-25.05";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
 
-   # lix = {
-   #   url = "git+https://git.lix.systems/lix-project/lix";
-   #   flake = false;
-   # };
-   # lix-module = {
-   #   #url = "https://git.lix.systems/lix-project/nixos-module/archive/2.91.1-2.tar.gz";
-   #   url = "git+https://git.lix.systems/lix-project/nixos-module";
-   #   #inputs.lix.follows = "lix";
-   #   inputs.nixpkgs.follows = "nixpkgs";
-   # };
+    lix = {
+      url = "git+https://git.lix.systems/lix-project/lix";
+      flake = false;
+    };
+    # lix-module = {
+    #  #url = "https://git.lix.systems/lix-project/nixos-module/archive/2.91.1-2.tar.gz";
+    #   url = "git+https://git.lix.systems/lix-project/nixos-module";
+    #   #inputs.lix.follows = "lix";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
 
     # Hardware Configuration
     nixos-hardware.url = "github:nixos/nixos-hardware";
@@ -108,7 +108,6 @@
           "electron-25.9.0"
         ];
       };
-
       overlays = with inputs; [
         tmux.overlay
         flake.overlays.default
