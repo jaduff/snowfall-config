@@ -55,7 +55,7 @@ in
   options.${namespace}.services.openssh = with types; {
     enable = mkBoolOpt false "Whether or not to configure OpenSSH support.";
     authorizedKeys = mkOpt (listOf str) [ default-key terminus-key ] "The public keys to apply.";
-    port = mkOpt port 2222 "The port to listen on (in addition to 22).";
+    port = mkOpt port 8888 "The port to listen on (in addition to 22).";
     manage-other-hosts =
       mkOpt bool true
         "Whether or not to add other host configurations to SSH config.";
