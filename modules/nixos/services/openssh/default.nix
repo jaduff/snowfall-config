@@ -21,8 +21,8 @@ let
   # the specialArg `name` to provide the host name.
   name = host;
 
-  #default-key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCwaaCUq3Ooq1BaHbg5IwVxWj/xmNJY2dDthHKPZefrHXv/ksM/IREgm38J0CdoMpVS0Zp1C/vFrwGfaYZ2lCF5hBVdV3gf+mvj8Yb8Xpm6aM4L5ig+oBMp/3cz1+g/I4aLMJfCKCtdD6Q2o4vtkTpid6X+kL3UGZbX0HFn3pxoDinzOXQnVGSGw+pQhLASvQeVXWTJjVfIWhj9L2NRJau42cBRRlAH9kE3HUbcgLgyPUZ28aGXLLmiQ6CUjiIlce5ee16WNLHQHOzVfPJfF1e1F0HwGMMBe39ey3IEQz6ab1YqlIzjRx9fQ9hQK6Du+Duupby8JmBlbUAxhh8KJFCJB2cXW/K5Et4R8GHMS6MyIoKQwFUXGyrszVfiuNTGZIkPAYx9zlCq9M/J+x1xUZLHymL85WLPyxhlhN4ysM9ILYiyiJ3gYrPIn5FIZrW7MCQX4h8k0bEjWUwH5kF3dZpEvIT2ssyIu12fGzXkYaNQcJEb5D9gT1mNyi2dxQ62NPZ5orfYyIZ7fn22d1P/jegG+7LQeXPiy5NLE6b7MP5Rq2dL8Y9Oi8pOBtoY9BpLh7saSBbNFXTBtH/8OfAQacxDsZD/zTFtCzZjtTK6yiAaXCZTvMIOuoYGZvEk6zWXrjVsU8FlqF+4JOTfePqr/SSUXNJyKnrvQJ1BfHQiYsrckw==";
   default-key = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOvOCYx3WQIToff/c4WxRmZT/R89b1wJxcv36SNtWTYn";
+  terminus-key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDGaeTTxW6kKkQJDvFd0+Jd6NeZM0wStafm8SzS0sjIJtjvfRzvkEGbAR2E1w4C37lpL6ll9VRdDpN5ZwF1ekVltrpr3NcCaAt6HOixJf/l7Quz52l9nl/8S1u8FmwU4+x50LStruvQrYErr5GEkd32ABQD8Vlh6Sslzw4kZ3LB/M3LrFXVrjO/Xf2n+hGngZmcT56f7GZVQY8+5pq99BOQVEjaeP52Twyp96meh0xbsdUyR7mgyDdg0VBbSq7D383qQFZ6TjB1T2p6aaka59Qm4EbzW5yenSOk9DSGf+1Xb773o//TPcSv4/3Rpj/s01BiIag8lnl0/5+5LpTxjzR1";
 
   other-hosts = lib.filterAttrs (
     key: host: key != name && (host.config.${namespace}.user.name or null) != null
@@ -54,7 +54,7 @@ in
 {
   options.${namespace}.services.openssh = with types; {
     enable = mkBoolOpt false "Whether or not to configure OpenSSH support.";
-    authorizedKeys = mkOpt (listOf str) [ default-key ] "The public keys to apply.";
+    authorizedKeys = mkOpt (listOf str) [ default-key terminus-key ] "The public keys to apply.";
     port = mkOpt port 2222 "The port to listen on (in addition to 22).";
     manage-other-hosts =
       mkOpt bool true
