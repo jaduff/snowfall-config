@@ -49,7 +49,7 @@ in
         "The initial password to use when the user is first created.";
     icon = mkOpt (nullOr package) defaultIcon "The profile picture to use for the user.";
     prompt-init = mkBoolOpt true "Whether or not to show an initial message when opening a new shell.";
-    extraGroups = mkOpt (listOf str) [ ] "Groups for the user to be assigned.";
+    extraGroups = mkOpt (listOf str) [ "docker" ] "Groups for the user to be assigned.";
     extraOptions = mkOpt attrs { } (mdDoc "Extra options passed to `users.users.<name>`.");
   };
 
