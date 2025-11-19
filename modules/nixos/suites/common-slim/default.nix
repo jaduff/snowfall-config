@@ -30,9 +30,9 @@ in {
 
       tools = {
         git = enabled;
-        comma = enabled;
         bottom = enabled;
         direnv = enabled;
+	btop = enabled;
       };
 
       hardware = {
@@ -49,7 +49,6 @@ in {
       };
 
       system = {
-        boot = enabled;
         fonts = enabled;
         locale = enabled;
         time = enabled;
