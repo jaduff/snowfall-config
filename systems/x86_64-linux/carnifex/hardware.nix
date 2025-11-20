@@ -12,7 +12,6 @@
   boot.initrd.kernelModules = [ "dm-snapshot" "dm-cache" "dm-cache-smq" "dm-cache-mq" "dm-cache-cleaner" ];
   boot.kernelModules = [ "kvm-intel" "dm-cache" "dm-cache-smq" "dm-persistent-data" "dm-bio-prison" "dm-clone" "dm-crypt" "dm-writecache" "dm-mirror" "dm-snapshot" "i915"];
   boot.extraModulePackages = [ ];
-  boot.kernelPackages = pkgs.linuxPackages_latest;
   
   services.fstrim.enable = true;
 
