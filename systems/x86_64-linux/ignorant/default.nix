@@ -23,6 +23,11 @@ services.ntp.enable = true;
 
 home-manager.backupFileExtension = "backup";
 
+  # Enable cross-building on the pi
+boot.binfmt.emulatedSystems = [ "aarch64-linux" ];
+
+
+
   boot.initrd.systemd.enable = true;
   boot.supportedFilesystems = [ "ntfs" ];
   boot.plymouth.enable = true;
