@@ -29,7 +29,10 @@
       fsType = "btrfs";
     };
 
-  swapDevices = [ ];
+  swapDevices = [{
+    device = "/mnt/data/swapfile";
+    size = 8 * 1024;
+    }];
 
   nixpkgs.hostPlatform = lib.mkDefault "aarch64-linux";
 }
