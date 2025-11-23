@@ -8,41 +8,41 @@
 }:
 with lib;
 with lib.${namespace}; let
-  cfg = config.${namespace}.services.wireguard;
+  cfg = config.${namespace}.services.wireguard.ignorant;
 in {
-  options.${namespace}.services.wireguard = with types; {
+  options.${namespace}.services.wireguard.ignorant = with types; {
     enable = mkBoolOpt false "Whether or not to enable wireguard-tools.";
   };
 
   config = mkIf cfg.enable {
     # configure sops for keyfiles
     sops.secrets.wg-ignorant-private = {
-      sopsFile = ./secrets.yaml;
+      sopsFile = ../secrets.yaml;
       owner = "jaduff";
       mode = "0400";
     };
     sops.secrets.wg-ignorant-public= {
-      sopsFile = ./secrets.yaml;
+      sopsFile = ../secrets.yaml;
       owner = "jaduff";
       mode = "0400";
     };
     sops.secrets.wg-dingopaw-private = {
-      sopsFile = ./secrets.yaml;
+      sopsFile = ../secrets.yaml;
       owner = "jaduff";
       mode = "0400";
     };
     sops.secrets.wg-dingopaw-public= {
-      sopsFile = ./secrets.yaml;
+      sopsFile = ../secrets.yaml;
       owner = "jaduff";
       mode = "0400";
     };
     sops.secrets.wg-jaduff-private = {
-      sopsFile = ./secrets.yaml;
+      sopsFile = ../secrets.yaml;
       owner = "jaduff";
       mode = "0400";
     };
     sops.secrets.wg-jaduff-public= {
-      sopsFile = ./secrets.yaml;
+      sopsFile = ../secrets.yaml;
       owner = "jaduff";
       mode = "0400";
     };
@@ -80,16 +80,19 @@ in {
       # Note: The private key can also be included inline via the privateKey option,
       # but this makes the private key world-readable; thus, using privateKeyFile is
       # recommended.
-      privateKeyFile = config.sops.secrets.${hostKeyPart}.path;
+      privateKeyFile = config.sops.secrets.wg-ignorant-private.path;
 
       peers = [
         # List of allowed peers.
         { # Feel free to give a meaningful name
           # Public key of the peer (not a file path).
-          publicKey = "OAIZPW+WS0iCvkWxeDiMfgS3xFe9O8VKIFjaVzBS1SU=";
+	publicKey = "xm4+XVgr8A6KgiqQbgRrJr4KJcSC//lUjcIkaif8aXE=";
+          allowedIPs = [ "10.100.0.2/32" ]; }
+	{publicKey = "OAIZPW+WS0iCvkWxeDiMfgS3xFe9O8VKIFjaVzBS1SU=";
+          allowedIPs = [ "10.100.0.2/32" ]; }
+	{publicKey= "CSk5h/Ip1kR8hnkV/EXo5+EN2x0YMwwnxS6xmrPHBUE=";
+          allowedIPs = [ "10.100.0.2/32" ]; }
           # List of IPs assigned to this peer within the tunnel subnet. Used to configure routing.
-          allowedIPs = [ "10.100.0.2/32" ];
-        }
       ];
     };
   };

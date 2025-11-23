@@ -21,6 +21,7 @@ nix.settings.trusted-substituters = ["https://ai.cachix.org"];
 nix.settings.trusted-public-keys = ["ai.cachix.org-1:N9dzRK+alWwoKXQlnn0H6aUx0lU/mspIoz8hMvGvbbc="];
 services.ntp.enable = true;
 
+
 home-manager.backupFileExtension = "backup";
 
   # Enable cross-building on the pi
@@ -65,7 +66,7 @@ virtualisation.libvirtd.enable = true;
   plusultra = {
     services = {
       #local-ai = enabled;
-      wireguard = enabled;
+      wireguard.ignorant = enabled;
     };
     desktop = {  };
     apps = {

@@ -21,6 +21,7 @@ nix.settings.trusted-public-keys = ["ai.cachix.org-1:N9dzRK+alWwoKXQlnn0H6aUx0lU
   boot.loader.generic-extlinux-compatible.enable = true;
 
   # networking.hostName = "nixos"; # Define your hostname.
+  networking.hostName = "dingopaw"; # Define your hostname.
 
   # Configure network connections interactively with nmcli or nmtui.
   networking.networkmanager.enable = true;
@@ -51,6 +52,7 @@ nix.settings.trusted-public-keys = ["ai.cachix.org-1:N9dzRK+alWwoKXQlnn0H6aUx0lU
     archetypes = {
       server = enabled;
       };
+    services.wireguard.dingopaw = enabled;
   };
 
 virtualisation.docker.daemon.settings.data-root = "/mnt/data/docker-data";
