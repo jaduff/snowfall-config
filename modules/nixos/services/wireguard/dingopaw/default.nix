@@ -10,18 +10,28 @@ with lib;
 with lib.${namespace}; let
   cfg = config.${namespace}.services.wireguard.dingopaw;
 in {
-  options.${namespace}.services.wireguard.dingopaw = with types; {
+  options.${namespace}.services.wireguard.dingopaw= with types; {
     enable = mkBoolOpt false "Whether or not to enable wireguard-tools.";
   };
 
   config = mkIf cfg.enable {
     # configure sops for keyfiles
-    sops.secrets.wg-private = {
+    sops.secrets.wg-ignorant-private = {
       sopsFile = ../secrets.yaml;
       owner = "jaduff";
       mode = "0400";
     };
-    sops.secrets.wg-public= {
+    sops.secrets.wg-ignorant-public= {
+      sopsFile = ../secrets.yaml;
+      owner = "jaduff";
+      mode = "0400";
+    };
+    sops.secrets.wg-dingopaw-private = {
+      sopsFile = ../secrets.yaml;
+      owner = "jaduff";
+      mode = "0400";
+    };
+    sops.secrets.wg-dingopaw-public= {
       sopsFile = ../secrets.yaml;
       owner = "jaduff";
       mode = "0400";
@@ -72,22 +82,19 @@ in {
       # recommended.
       privateKeyFile = config.sops.secrets.wg-dingopaw-private.path;
 
-    };
       peers = [
         # List of allowed peers.
         { # Feel free to give a meaningful name
           # Public key of the peer (not a file path).
 	publicKey = "xm4+XVgr8A6KgiqQbgRrJr4KJcSC//lUjcIkaif8aXE=";
-          allowedIPs = [ "10.100.0.2/32" ];
-	}
+          allowedIPs = [ "10.100.0.2/32" ]; }
 	{publicKey = "OAIZPW+WS0iCvkWxeDiMfgS3xFe9O8VKIFjaVzBS1SU=";
-          allowedIPs = [ "10.100.0.2/32" ];
-	}
+          allowedIPs = [ "10.100.0.2/32" ]; }
 	{publicKey= "CSk5h/Ip1kR8hnkV/EXo5+EN2x0YMwwnxS6xmrPHBUE=";
-          allowedIPs = [ "10.100.0.2/32" ];
-	}
+          allowedIPs = [ "10.100.0.2/32" ]; }
           # List of IPs assigned to this peer within the tunnel subnet. Used to configure routing.
       ];
+    };
   };
   };
 }
