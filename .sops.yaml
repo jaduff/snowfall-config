@@ -3,6 +3,7 @@ keys:
   - &hosts:
     - &ignorant age1a44hucqnrmgjytz8m2vjjv6a4a837q3qj7mmsh56w5w8mxx4nf3stah7p9
     - &carnifex age1sgyzcwc25qzrk2mrttvdldth3n859k0mygv9a4vy4h6529vf0qdq35vyn7
+    - &dingopaw age10h6l78ekhxdqqnpxj5eu6jnm99fj0jj0gdc8thn44s6yxzkawgesue96f9
 creation_rules:
   - path_regex: modules/nixos/services/syncthing/[^/]+\.(yaml|json|env|ini|sops)$
     key_groups:
@@ -10,14 +11,17 @@ creation_rules:
           - *jaduff
           - *ignorant
           - *carnifex
+          - *dingopaw
   - path_regex: modules/nixos/system/sops-nix/[^/]+\.(yaml|json|env|ini|sops)$
     key_groups:
       - age:
           - *jaduff
           - *ignorant
           - *carnifex
+          - *dingopaw
   - path_regex: modules/nixos/services/wireguard/[^/]+\.(yaml|json|env|ini|sops)$
     key_groups:
       - age:
           - *jaduff
           - *ignorant
+          - *dingopaw
