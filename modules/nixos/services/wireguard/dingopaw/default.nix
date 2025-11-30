@@ -81,6 +81,7 @@ in {
       # but this makes the private key world-readable; thus, using privateKeyFile is
       # recommended.
       privateKeyFile = config.sops.secrets.wg-dingopaw-private.path;
+      presharedKeyFile = config.sops.secrets.wg-psk.path;
 
       peers = [
         # List of allowed peers.
