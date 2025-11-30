@@ -81,17 +81,20 @@ in {
       # but this makes the private key world-readable; thus, using privateKeyFile is
       # recommended.
       privateKeyFile = config.sops.secrets.wg-dingopaw-private.path;
-      presharedKeyFile = config.sops.secrets.wg-psk.path;
 
       peers = [
         # List of allowed peers.
         { # Feel free to give a meaningful name
           # Public key of the peer (not a file path).
+	#ignorant
 	publicKey = "xm4+XVgr8A6KgiqQbgRrJr4KJcSC//lUjcIkaif8aXE=";
           allowedIPs = [ "10.100.0.2/32" ]; }
+	#jaduff
 	{publicKey = "OAIZPW+WS0iCvkWxeDiMfgS3xFe9O8VKIFjaVzBS1SU=";
           allowedIPs = [ "10.100.0.2/32" ]; }
+	#dingopaw
 	{publicKey= "CSk5h/Ip1kR8hnkV/EXo5+EN2x0YMwwnxS6xmrPHBUE=";
+         presharedKeyFile = config.sops.secrets.wg-psk.path;
           allowedIPs = [ "10.100.0.2/32" ]; }
           # List of IPs assigned to this peer within the tunnel subnet. Used to configure routing.
       ];
