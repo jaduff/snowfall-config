@@ -49,6 +49,7 @@ nix.settings.trusted-public-keys = ["ai.cachix.org-1:N9dzRK+alWwoKXQlnn0H6aUx0lU
   
   plusultra = {
     system.boot = lib.mkForce disabled;
+    tools.borgbackup = enabled;
     archetypes = {
       server = enabled;
       };
