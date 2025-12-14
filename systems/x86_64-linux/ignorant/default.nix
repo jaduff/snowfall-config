@@ -52,7 +52,7 @@ virtualisation.libvirtd.enable = true;
 
 
   services.minecraft-server = {
-    enable = false;
+    enable = true;
     eula = true;
     openFirewall = true;
     declarative = true;
