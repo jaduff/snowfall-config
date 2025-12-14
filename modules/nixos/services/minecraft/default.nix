@@ -84,7 +84,7 @@ in
                 default =
                   if config.type == "vanilla" then pkgs.minecraft-server else pkgs.plusultra.minecraft-forge;
                 defaultText = lib.literalExpression ''
-                  pkgs.minecraft-server
+                  unstable.minecraft-server
                 '';
               };
 

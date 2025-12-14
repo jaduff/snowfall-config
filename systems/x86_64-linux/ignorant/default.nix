@@ -58,7 +58,7 @@ virtualisation.libvirtd.enable = true;
     declarative = true;
     serverProperties = {
       server-port = 43000;
-      level-seed = "jellyfish";
+      level-seed = "bananas-jellyfish";
     };
   };
 
