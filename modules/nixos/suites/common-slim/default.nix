@@ -46,7 +46,7 @@ in {
 
       security = {
         gpg = enabled;
-        doas = enabled;
+        sudo = enabled;
       };
 
       system = {
