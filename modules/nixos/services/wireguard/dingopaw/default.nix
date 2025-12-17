@@ -31,6 +31,11 @@ in {
       owner = "jaduff";
       mode = "0400";
     };
+    sops.secrets.wg-dingopaw-private= {
+      sopsFile = ../secrets.yaml;
+      owner = "jaduff";
+      mode = "0400";
+    };
     sops.secrets.wg-jaduff-private = {
       sopsFile = ../secrets.yaml;
       owner = "jaduff";
