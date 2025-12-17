@@ -41,6 +41,11 @@ in {
       owner = "jaduff";
       mode = "0400";
     };
+    sops.secrets.wg-psk = {
+      sopsFile = ../secrets.yaml;
+      owner = "jaduff";
+      mode = "0400";
+    };
      # enable NAT
   networking.nat.enable = true;
   networking.nat.externalInterface = "eth0";
