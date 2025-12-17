@@ -53,6 +53,8 @@ nix.settings.trusted-public-keys = ["ai.cachix.org-1:N9dzRK+alWwoKXQlnn0H6aUx0lU
     archetypes = {
       server = enabled;
       };
+    security.doas = disabled;
+    security.sudo = enabled;
     services.wireguard.dingopaw = enabled;
   };
 
