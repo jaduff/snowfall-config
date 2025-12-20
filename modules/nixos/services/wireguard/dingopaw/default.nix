@@ -46,6 +46,16 @@ in {
       owner = "jaduff";
       mode = "0400";
     };
+    sops.secrets.wg-carnifex-private = {
+      sopsFile = ../secrets.yaml;
+      owner = "jaduff";
+      mode = "0400";
+    };
+    sops.secrets.wg-carnifex-public= {
+      sopsFile = ../secrets.yaml;
+      owner = "jaduff";
+      mode = "0400";
+    };
     sops.secrets.wg-psk = {
       sopsFile = ../secrets.yaml;
       owner = "jaduff";
@@ -101,6 +111,10 @@ in {
 	{publicKey= "CSk5h/Ip1kR8hnkV/EXo5+EN2x0YMwwnxS6xmrPHBUE=";
          presharedKeyFile = config.sops.secrets.wg-psk.path;
           allowedIPs = [ "10.100.0.4/32" ]; }
+	#carnifex
+	{publicKey= "RFtfHLRm5VmlEE2m8ONl33xTv/A3p/RNVqgJwwsn0FQ=";
+         presharedKeyFile = config.sops.secrets.wg-psk.path;
+          allowedIPs = [ "10.100.0.5/32" ]; }
           # List of IPs assigned to this peer within the tunnel subnet. Used to configure routing.
       ];
     };
