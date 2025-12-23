@@ -66,7 +66,7 @@ virtualisation.libvirtd.enable = true;
   plusultra = {
     services = {
       #local-ai = enabled;
-      wireguard.ignorant = enabled;
+      #wireguard.ignorant = enabled;
     };
     desktop = {  };
     apps = {
