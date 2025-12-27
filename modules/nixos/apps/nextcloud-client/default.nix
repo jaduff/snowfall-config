@@ -15,6 +15,6 @@ in {
   };
 
   config = mkIf cfg.enable {
-    environment.systemPackages = with pkgs; [nextcloud-client];
+    environment.systemPackages = with pkgs; [nextcloud-client nextcloud-talk-desktop];
   };
 }
