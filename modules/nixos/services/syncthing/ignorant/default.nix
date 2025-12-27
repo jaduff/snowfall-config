@@ -17,7 +17,7 @@ in {
   config = mkIf cfg.enable {
     #environment.systemPackages = with pkgs; [
     #];
-    sops.secrets.ignorant-keyfile= {
+    sops.secrets.ignorant-keyfile = {
       sopsFile = ../secrets.yaml;
       owner = "jaduff";
       mode = "0440";
