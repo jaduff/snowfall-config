@@ -19,10 +19,6 @@ in
       name = mkOpt str "Nordic-darker" "The name of the GTK theme to apply.";
       pkg = mkOpt package pkgs.nordic "The package to use for the theme.";
     };
-    cursor = {
-      name = mkOpt str "Bibata-Modern-Ice" "The name of the cursor theme to apply.";
-      pkg = mkOpt package pkgs.plusultra.bibata-cursors "The package to use for the cursor theme.";
-    };
     icon = {
       name = mkOpt str "Papirus" "The name of the icon theme to apply.";
       pkg = mkOpt package pkgs.papirus-icon-theme "The package to use for the icon theme.";

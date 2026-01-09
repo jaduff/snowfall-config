@@ -18,7 +18,6 @@ let
   };
   cli-apps = {
     wine = enabled;
-    proton = enabled;
   };
 in
 {

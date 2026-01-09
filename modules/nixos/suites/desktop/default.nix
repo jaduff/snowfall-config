@@ -36,7 +36,6 @@ in
         telegram-desktop = enabled;
         nextcloud-client = enabled;
         kdeconnect = enabled;
-	whatsapp-for-linux = enabled;
       };
 
       cli-apps = {
