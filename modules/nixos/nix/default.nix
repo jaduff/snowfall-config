@@ -44,7 +44,6 @@ in
 
     environment.systemPackages = with pkgs; [
       plusultra.nixos-revision
-      (plusultra.nixos-hosts.override { hosts = inputs.self.nixosConfigurations; })
       nixfmt-rfc-style
       nix-index
       nix-prefetch-git

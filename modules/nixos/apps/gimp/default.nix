@@ -16,5 +16,5 @@ in
     enable = mkBoolOpt false "Whether or not to enable Gimp.";
   };
 
-  config = mkIf cfg.enable { environment.systemPackages = with pkgs; [ gimp gimpPlugins.bimp]; };
+  config = mkIf cfg.enable { environment.systemPackages = with pkgs; [ gimp ]; };
 }
