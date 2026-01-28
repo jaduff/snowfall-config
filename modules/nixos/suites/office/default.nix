@@ -21,5 +21,6 @@ in {
       kcalc = enabled;
       protonvpn-gui = enabled;
       remmina = enabled;
+      microsoft-edge = enabled;
     };};};
 }
