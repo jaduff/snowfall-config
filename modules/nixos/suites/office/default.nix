@@ -22,5 +22,6 @@ in {
       protonvpn-gui = enabled;
       remmina = enabled;
       microsoft-edge = enabled;
+      freecad = enabled;
     };};};
 }
