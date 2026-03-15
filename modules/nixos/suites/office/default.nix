@@ -23,5 +23,6 @@ in {
       remmina = enabled;
       microsoft-edge = enabled;
       freecad = enabled;
+      anki = enabled;
     };};};
 }

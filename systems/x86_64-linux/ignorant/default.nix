@@ -80,6 +80,9 @@ virtualisation.libvirtd.enable = true;
       doas = disabled;
       sudo = enabled;
     };
+    tools = {
+      piper = enabled;
+    };
     services = {
       ollama = enabled;
       syncthing = {
