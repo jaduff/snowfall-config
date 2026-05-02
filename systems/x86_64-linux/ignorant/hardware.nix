@@ -61,7 +61,7 @@ in {
   hardware.bluetooth.enable = true;
 
   # Load nvidia driver for Xorg and Wayland
-  services.xserver.videoDrivers = ["nvidia"];
+  services.xserver.videoDrivers = ["nvidia" "amdgpu"];
 
   hardware.nvidia = {
 
@@ -90,6 +90,15 @@ in {
     # Enable the Nvidia settings menu,
 	# accessible via `nvidia-settings`.
     nvidiaSettings = true;
+
+    prime = {
+	offload = {
+	      enable = true;
+	      enableOffloadCmd = true; # Allows use of `prime-run` command
+    };
+    amdgpuBusId = "PCI:12:0:0"; # Replace with your AMD GPU's Bus ID
+    nvidiaBusId = "PCI:01:0:0"; # Replace with your NVIDIA GPU's Bus ID
+    };
 
     # Optionally, you may need to select the appropriate driver version for your specific GPU.
     package = config.boot.kernelPackages.nvidiaPackages.stable;
