@@ -17,9 +17,13 @@ in {
   ];
 
   boot.initrd.availableKernelModules = [ "nvme" "xhci_pci" "ahci" "usb_storage" "usbhid" "sd_mod" "sr_mod" ];
-  boot.initrd.kernelModules = [ "dm-snapshot" ];
-  boot.kernelModules = [ "kvm-amd" "dm-crypt" "mt7921e" ];
+  boot.initrd.kernelModules = [ "dm-snapshot" "amdgpu" ];
+  boot.kernelModules = [ "kvm-amd" "dm-crypt" "mt7921e" "amdgpu" ];
   boot.extraModulePackages = [ ];
+  boot.kernelParams = [
+    "amdgpu.dc=1"
+    "amdgpu.runpm=1"
+  ];
 
   boot.initrd.luks.devices.cryptroot.device = "/dev/disk/by-uuid/96009f40-a467-492a-9d14-2d767f1859fb";
 
@@ -55,13 +59,18 @@ in {
  # Enable OpenGL
   hardware.graphics = {
     enable = true;
+    extraPackages = with pkgs; [
+      mesa
+      libva-vdpau-driver
+      libvdpau-va-gl
+    ];
     #driSupport = true;
     #driSupport32Bit = true;
   };
   hardware.bluetooth.enable = true;
 
   # Load nvidia driver for Xorg and Wayland
-  services.xserver.videoDrivers = ["nvidia" "amdgpu"];
+  services.xserver.videoDrivers = ["amdgpu" "nvidia" ];
 
   hardware.nvidia = {
 
