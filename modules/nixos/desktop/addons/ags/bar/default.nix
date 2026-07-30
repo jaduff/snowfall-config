@@ -16,7 +16,7 @@ let
     getExe
     ;
 
-  bar = pkgs.runCommandNoCC "plusultra-ags-bar" { } ''
+  bar = pkgs.runCommand "plusultra-ags-bar" { } ''
     mkdir -p $out
 
     cp -r ${./src}/* $out/

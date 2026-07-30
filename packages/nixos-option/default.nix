@@ -3,7 +3,7 @@
   nixos-option,
   makeWrapper,
   fetchFromGitHub,
-  runCommandNoCC,
+  runCommand,
   flakeSource ? "/home/short/work/config",
   namespace,
   ...
@@ -25,7 +25,7 @@ let
     maintainers = with maintainers; [ jakehamilton ];
   };
 
-  package = runCommandNoCC "nixos-option" { buildInputs = [ makeWrapper ]; } ''
+  package = runCommand "nixos-option" { buildInputs = [ makeWrapper ]; } ''
     makeWrapper ${nixos-option}/bin/nixos-option $out/bin/nixos-option \
       --add-flags --config_expr \
       --add-flags "\"${prefix}.config\"" \
