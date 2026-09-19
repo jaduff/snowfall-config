@@ -18,7 +18,6 @@ in {
     environment.systemPackages = with pkgs; [ oterm ];
 	services.ollama = {
 	  enable = true;
-	  acceleration = "cuda";
           port = 11434;
     };
     networking.firewall.allowedTCPPorts = [ 4430 ];
