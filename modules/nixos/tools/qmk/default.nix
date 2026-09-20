@@ -20,10 +20,13 @@ in
     environment.systemPackages = with pkgs; [
       qmk
       keymapper
+      via
     ];
+    hardware.keyboard.qmk.enable = true;
 
     services.udev.packages = with pkgs; [
       qmk-udev-rules
+      via
       zsa-udev-rules
     ];
   };

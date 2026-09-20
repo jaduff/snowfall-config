@@ -82,6 +82,7 @@ virtualisation.libvirtd.enable = true;
     };
     tools = {
       piper = enabled;
+      qmk = enabled;
     };
     services = {
       ollama = enabled;
