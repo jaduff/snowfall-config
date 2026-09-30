@@ -31,6 +31,7 @@ in
     # This option disables NixOS Containers, leaving OCI Containers available.
     boot.enableContainers = false;
 
+    hardware.nvidia-container-toolkit.enable = true;
     virtualisation = {
       podman = {
         enable = cfg.enable;

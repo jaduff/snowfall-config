@@ -17,8 +17,10 @@ in {
   config = mkIf cfg.enable {
     environment.systemPackages = with pkgs; [ oterm ];
 	services.ollama = {
+	  package = pkgs.ollama-cuda;
 	  enable = true;
           port = 11434;
+	  environmentVariables = {OLLAMA_NOHISTORY = "1";};
     };
     networking.firewall.allowedTCPPorts = [ 4430 ];
 };
