@@ -37,8 +37,8 @@
 
 
     # Snowfall Flake
-    flake.url = "github:snowfallorg/flake";
-    flake.inputs.nixpkgs.follows = "unstable";
+    #flake.url = "github:snowfallorg/flake";
+    #flake.inputs.nixpkgs.follows = "unstable";
 
 
     # Comma
@@ -110,7 +110,7 @@
       };
       overlays = with inputs; [
         tmux.overlay
-        flake.overlays.default
+        #flake.overlays.default
         #lix-module.overlays.default
       ];
 

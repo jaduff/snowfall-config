@@ -25,7 +25,7 @@ in {
        cache.public = enabled;
 
       cli-apps = {
-        flake = enabled;
+        flake = disabled;
         vim = enabled;
       };
 
