@@ -35,6 +35,7 @@ in {
         comma = enabled;
         bottom = enabled;
         btop = enabled;
+	nvtop = enabled;
         borgbackup = enabled;
 	dig = enabled;
       };
