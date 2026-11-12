@@ -14,5 +14,5 @@ in {
     enable = mkBoolOpt false "Whether or not to enable nvtop.";
   };
 
-  config = mkIf cfg.enable {environment.systemPackages = with pkgs; [nvtop];};
+  config = mkIf cfg.enable {environment.systemPackages = with pkgs; [nvtopPackages.full];};
 }
